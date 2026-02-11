@@ -1,0 +1,206 @@
+/* ========== Basis (Mantine-Tokens) ========== */
+body {
+  font-family: var(--mantine-font-family);
+  font-size: var(--mantine-font-size-md);
+  line-height: var(--mantine-line-height);
+  color: var(--mantine-color-text);
+  background-color: var(--mantine-color-body);
+  -webkit-font-smoothing: var(--mantine-webkit-font-smoothing);
+  -moz-osx-font-smoothing: var(--mantine-moz-font-smoothing);
+}
+
+/* ========== Typografie ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--mantine-font-family-headings);
+  font-weight: var(--mantine-heading-font-weight);
+  color: var(--mantine-color-text);
+}
+
+h1 { font-size: var(--mantine-h1-font-size); line-height: var(--mantine-h1-line-height); }
+h2 { font-size: var(--mantine-h2-font-size); line-height: var(--mantine-h2-line-height); }
+h3 { font-size: var(--mantine-h3-font-size); line-height: var(--mantine-h3-line-height); }
+h4 { font-size: var(--mantine-h4-font-size); line-height: var(--mantine-h4-line-height); }
+h5 { font-size: var(--mantine-h5-font-size); line-height: var(--mantine-h5-line-height); }
+h6 { font-size: var(--mantine-h6-font-size); line-height: var(--mantine-h6-line-height); }
+
+p {
+  margin: 0 0 var(--mantine-spacing-md);
+}
+
+code, pre {
+  font-family: var(--mantine-font-family-monospace);
+  font-size: var(--mantine-font-size-sm);
+}
+
+/* ========== Links ========== */
+a {
+  color: var(--mantine-color-anchor);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--mantine-spacing-md);
+  padding: var(--mantine-spacing-md) var(--mantine-spacing-md);
+  max-width: 75rem;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--mantine-color-default-border);
+}
+
+.navbar__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--mantine-spacing-sm);
+  color: var(--mantine-color-text);
+  font-weight: var(--mantine-heading-font-weight);
+  text-decoration: none;
+}
+
+.navbar__brand:hover {
+  text-decoration: underline;
+}
+
+.navbar__logo {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar__brand-name {
+  font-size: var(--mantine-font-size-lg);
+  line-height: 1;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--mantine-spacing-md);
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--mantine-spacing-xs);
+  border: none;
+  border-radius: var(--mantine-radius-sm);
+  background: transparent;
+  color: var(--mantine-color-text);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--mantine-color-default-hover);
+}
+
+.theme-toggle__icon {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.theme-toggle__icon[hidden] {
+  display: none !important;
+}
+
+.theme-toggle__icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: currentColor;
+}
+
+/* ========== Layout / Container ========== */
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--mantine-spacing-md);
+}
+
+@media (min-width: 48em) {
+  .container {
+    padding: var(--mantine-spacing-lg);
+  }
+}
+
+@media (min-width: 62em) {
+  .container {
+    padding: var(--mantine-spacing-xl);
+  }
+}
+
+/* ========== Karten / Blöcke (z. B. Post-Teaser) ========== */
+.card {
+  padding: var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-md);
+  background: var(--mantine-color-default);
+  border: 1px solid var(--mantine-color-default-border);
+  box-shadow: var(--mantine-shadow-sm);
+}
+
+/* ========== Buttons ========== */
+.btn {
+  padding: var(--mantine-spacing-sm) var(--mantine-spacing-md);
+  font-size: var(--mantine-font-size-sm);
+  border-radius: var(--mantine-radius-sm);
+  border: 1px solid var(--mantine-color-default-border);
+  background: var(--mantine-color-default);
+  color: var(--mantine-color-default-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--mantine-color-default-hover);
+}
+
+.btn-primary {
+  background: var(--mantine-primary-color-filled);
+  color: var(--mantine-primary-color-contrast);
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background: var(--mantine-primary-color-filled-hover);
+}
+
+/* ========== Post-Liste ========== */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mantine-spacing-lg);
+}
+
+.post-list article {
+  padding: var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-sm);
+  border: 1px solid var(--mantine-color-default-border);
+}
+
+/* ========== Artikel (Einzelpost) ========== */
+.article {
+  padding: var(--mantine-spacing-md) 0;
+}
+
+.article__title {
+  margin-bottom: var(--mantine-spacing-sm);
+}
+
+.article__meta {
+  font-size: var(--mantine-font-size-sm);
+  color: var(--mantine-color-dimmed);
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.article__content {
+  line-height: var(--mantine-line-height-md);
+}
+
+.article__content > * + * {
+  margin-top: var(--mantine-spacing-md);
+}

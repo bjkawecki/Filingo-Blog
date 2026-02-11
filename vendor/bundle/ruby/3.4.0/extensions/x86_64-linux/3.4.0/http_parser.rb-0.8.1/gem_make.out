@@ -1,0 +1,19 @@
+current directory: /home/bjoern/Projekte/Filingo-Blog/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/bjoern/Projekte/Filingo-Blog/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260211-690346-tlsrym sitelibdir\=./.gem.20260211-690346-tlsrym clean
+
+current directory: /home/bjoern/Projekte/Filingo-Blog/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260211-690346-tlsrym sitelibdir\=./.gem.20260211-690346-tlsrym
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/bjoern/Projekte/Filingo-Blog/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260211-690346-tlsrym sitelibdir\=./.gem.20260211-690346-tlsrym install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260211-690346-tlsrym
+
+current directory: /home/bjoern/Projekte/Filingo-Blog/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260211-690346-tlsrym sitelibdir\=./.gem.20260211-690346-tlsrym clean

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<h1>Kategorie: {{ page.title }}</h1>
+
+<ul class="post-list">
+  {% for post in page.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="article__meta"> — {{ post.date | date: "%d.%m.%Y" }}</span>
+  </li>
+  {% endfor %}
+</ul>

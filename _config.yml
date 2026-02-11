@@ -1,0 +1,57 @@
+# Site
+title: Filingo Blog
+description: "Blog über Filingo"
+author: Björn Kawecki
+email: bkawecki@mailbox.org
+url: "https://blog.filingo.app"
+baseurl: ""
+
+# Plugins
+plugins:
+  - jekyll-paginate-v2
+  - jekyll-archives
+  - jekyll-polyglot
+
+# Pagination (Startseite)
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page/:num/"
+  title: ":title – Seite :num"
+
+# Kategorie-Archiv
+jekyll-archives:
+  enabled:
+    - categories
+  layout: category
+  permalinks:
+    category: "/category/:name/"
+
+# Mehrsprachigkeit (de/en)
+languages: ["de", "en"]
+default_lang: "de"
+exclude_from_localizations: ["assets", "images", "feed.xml", "robots.txt", "sitemap.xml"]
+
+# Layout: alle Seiten default, Posts mit post + Permalink
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      permalink: /:title.html
+
+# Markdown
+kramdown:
+  smart_quotes: sbquo,rsquo,bdquo,rdquo
+
+# Build: diese Dateien/Ordner nicht in _site übernehmen
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _site

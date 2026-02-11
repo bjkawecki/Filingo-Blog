@@ -1,0 +1,12 @@
+<nav class="navbar" aria-label="Hauptnavigation">
+  <a class="navbar__brand" href="{{ site.baseurl }}/">
+    <img class="navbar__logo" src="{{ '/assets/img/brand-logo.svg' | relative_url }}" alt="" width="28" height="28">
+    <span class="navbar__brand-name">{{ site.title }}</span>
+  </a>
+  <div class="navbar__actions">
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Dark-/Hellmodus umschalten">
+      <span class="theme-toggle__icon theme-toggle__icon--light" hidden aria-hidden="true">{% include icons/light-mode.html %}</span>
+      <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">{% include icons/dark-mode.html %}</span>
+    </button>
+  </div>
+</nav>

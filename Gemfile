@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+gem "jekyll", "~> 4.4"
+gem "webrick"
+gem "erb"
+gem "jekyll-paginate-v2"
+gem "jekyll-archives"
+gem "jekyll-polyglot"
