@@ -22,21 +22,23 @@
         </div>
       </div>
 
-      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="{{ site.data[site.active_lang].strings.theme.toggle_aria }}">
-        <span class="theme-toggle__icon theme-toggle__icon--light" hidden aria-hidden="true">{% include icons/light-mode.html %}</span>
-        <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">{% include icons/dark-mode.html %}</span>
-      </button>
-      <nav class="lang-switcher" aria-label="Sprache">
-        {% for lang in site.languages %}
-        {% capture lang_href %}{{ site.baseurl }}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if page.permalink_lang[lang] and page.permalink_lang[lang] != '/' %}{{ page.permalink_lang[lang] | remove_first: '/' }}{% endif %}{% endcapture %}
-        {% if lang == site.active_lang %}
-        <span class="lang-switcher__current" aria-current="true">{{ lang | upcase }}</span>
-        {% else %}
-        <a class="lang-switcher__link" {% static_href %}href="{{ lang_href }}" {% endstatic_href %}>{{ lang | upcase }}</a>
-        {% endif %}
-        {% unless forloop.last %}<span class="lang-switcher__sep" aria-hidden="true">/</span>{% endunless %}
-        {% endfor %}
-      </nav>
+      <div class="navbar__actions-buttons">
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="{{ site.data[site.active_lang].strings.theme.toggle_aria }}">
+          <span class="theme-toggle__icon theme-toggle__icon--light" hidden aria-hidden="true">{% include icons/light-mode.html %}</span>
+          <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">{% include icons/dark-mode.html %}</span>
+        </button>
+        <nav class="lang-switcher" aria-label="Sprache">
+          {% for lang in site.languages %}
+          {% capture lang_href %}{{ site.baseurl }}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if page.permalink_lang[lang] and page.permalink_lang[lang] != '/' %}{{ page.permalink_lang[lang] | remove_first: '/' }}{% endif %}{% endcapture %}
+          {% if lang == site.active_lang %}
+          <span class="lang-switcher__current" aria-current="true">{{ lang | upcase }}</span>
+          {% else %}
+          <a class="lang-switcher__link" {% static_href %}href="{{ lang_href }}" {% endstatic_href %}>{{ lang | upcase }}</a>
+          {% endif %}
+          {% unless forloop.last %}<span class="lang-switcher__sep" aria-hidden="true">/</span>{% endunless %}
+          {% endfor %}
+        </nav>
+      </div>
 
     </div>
   </div>

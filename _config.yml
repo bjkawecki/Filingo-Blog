@@ -11,6 +11,8 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-archives
   - jekyll-polyglot
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Pagination (Startseite, neueste zuerst)
 pagination:
@@ -32,7 +34,7 @@ jekyll-archives:
 # Mehrsprachigkeit (de/en)
 languages: ["de", "en"]
 default_lang: "de"
-exclude_from_localizations: ["assets", "images", "feed.xml", "robots.txt", "sitemap.xml"]
+exclude_from_localizations: ["assets", "images", "robots.txt", "sitemap.xml"]
 
 # Layout: alle Seiten default, Posts mit post + Permalink
 defaults:

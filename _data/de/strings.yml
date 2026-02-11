@@ -29,6 +29,7 @@ footer:
   blog: "Blog"
   about: "Über"
   imprint: "Impressum"
+  feed: "RSS"
   about_path: "/ueber/"
   imprint_path: "/impressum/"
   built_with: "Erstellt mit Jekyll & GitHub Pages."

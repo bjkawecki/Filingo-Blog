@@ -29,6 +29,7 @@ footer:
   blog: "Blog"
   about: "About"
   imprint: "Imprint"
+  feed: "RSS"
   about_path: "/en/about/"
   imprint_path: "/en/imprint/"
   built_with: "Built with Jekyll & GitHub Pages."

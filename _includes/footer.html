@@ -8,6 +8,8 @@
       {% capture imprint_href %}{{ site.baseurl }}{{ site.data[site.active_lang].strings.footer.imprint_path }}{% endcapture %}
       <a href="{{ blog_href }}">{{ f.blog }}</a>
       <span class="footer__sep" aria-hidden="true"></span>
+      <a href="{{ feed_href }}">{{ f.feed }}</a>
+      <span class="footer__sep" aria-hidden="true"></span>
       <a href="{{ about_href }}">{{ f.about }}</a>
       <span class="footer__sep" aria-hidden="true"></span>
       <a href="{{ imprint_href }}">{{ f.imprint }}</a>

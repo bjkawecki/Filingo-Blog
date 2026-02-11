@@ -11,7 +11,7 @@
     {% assign next_index = current_index | minus: 1 %}
     {% if next_index >= 0 %}
       {% assign next_post = all_posts[next_index] %}
-      <a class="post-pagination__link post-pagination__link--next" href="{{ next_post.url | relative_url }}">{{ site.data[site.active_lang].strings.pagination.next_post }}</a>
+      <a class="post-pagination__link post-pagination__link--next" href="{{ next_post.url | relative_url }}" title="{{ next_post.title }}" aria-label="{{ site.data[site.active_lang].strings.pagination.next_post }}: {{ next_post.title }}">{{ site.data[site.active_lang].strings.pagination.next_post }}</a>
     {% else %}
       <span class="post-pagination__placeholder"></span>
     {% endif %}
@@ -19,7 +19,7 @@
     {% assign prev_index = current_index | plus: 1 %}
     {% if prev_index < all_posts.size %}
       {% assign prev_post = all_posts[prev_index] %}
-      <a class="post-pagination__link post-pagination__link--prev" href="{{ prev_post.url | relative_url }}">{{ site.data[site.active_lang].strings.pagination.previous_post }}</a>
+      <a class="post-pagination__link post-pagination__link--prev" href="{{ prev_post.url | relative_url }}" title="{{ prev_post.title }}" aria-label="{{ site.data[site.active_lang].strings.pagination.previous_post }}: {{ prev_post.title }}">{{ site.data[site.active_lang].strings.pagination.previous_post }}</a>
     {% else %}
       <span class="post-pagination__placeholder"></span>
     {% endif %}
