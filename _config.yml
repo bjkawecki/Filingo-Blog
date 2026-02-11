@@ -3,8 +3,8 @@ title: Фilingo Blog
 description: "Blog über Filingo"
 author: Björn Kawecki
 email: bkawecki@mailbox.org
-url: "https://blog.filingo.app"
-baseurl: ""
+baseurl: "/Filingo-Blog"
+url: "https://bjkawecki.github.io"
 
 # Plugins
 plugins:
