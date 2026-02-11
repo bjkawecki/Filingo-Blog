@@ -12,12 +12,14 @@ plugins:
   - jekyll-archives
   - jekyll-polyglot
 
-# Pagination (Startseite)
+# Pagination (Startseite, neueste zuerst)
 pagination:
   enabled: true
   per_page: 5
   permalink: "/page/:num/"
   title: ":title – Seite :num"
+  sort_field: date
+  sort_reverse: true
 
 # Kategorie-Archiv
 jekyll-archives:
