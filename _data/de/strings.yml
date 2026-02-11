@@ -33,3 +33,9 @@ footer:
   about_path: "/ueber/"
   imprint_path: "/impressum/"
   built_with: "Erstellt mit Jekyll & GitHub Pages."
+
+page_404:
+  title: "Seite nicht gefunden"
+  heading: "404"
+  message: "Diese Seite existiert leider nicht oder wurde verschoben."
+  back_home: "Zur Startseite"

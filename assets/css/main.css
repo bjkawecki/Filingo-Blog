@@ -709,6 +709,45 @@ a:hover {
   margin-top: var(--mantine-spacing-md);
 }
 
+/* ========== 404 ========== */
+.page-404 {
+  text-align: center;
+  padding: var(--mantine-spacing-xl) 0;
+}
+
+.page-404__code {
+  font-size: 4rem;
+  font-weight: var(--mantine-heading-font-weight);
+  line-height: 1;
+  color: var(--mantine-color-anchor);
+  margin: 0 0 var(--mantine-spacing-md);
+}
+
+.page-404__title {
+  margin: 0 0 var(--mantine-spacing-sm);
+}
+
+.page-404__message {
+  margin: 0 0 var(--mantine-spacing-lg);
+  color: var(--mantine-color-dimmed);
+}
+
+.page-404__link {
+  display: inline-block;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  background: var(--mantine-color-anchor);
+  font-size: var(--mantine-font-size-md);
+  font-weight: var(--mantine-heading-font-weight);
+  color: var(--mantine-color-white);
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+}
+
+.page-404__link:hover {
+  filter: brightness(1.1);
+  text-decoration: none;
+}
+
 /* ========== Mobile (alle Seiten) ========== */
 @media (max-width: 48em) {
   .container {

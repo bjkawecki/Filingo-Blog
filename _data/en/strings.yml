@@ -33,3 +33,9 @@ footer:
   about_path: "/en/about/"
   imprint_path: "/en/imprint/"
   built_with: "Built with Jekyll & GitHub Pages."
+
+page_404:
+  title: "Page not found"
+  heading: "404"
+  message: "This page does not exist or has been moved."
+  back_home: "Back to home"
