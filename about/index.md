@@ -12,4 +12,3 @@ Dieser Blog begleitet das Projekt **Filingo** und thematisiert Sprachenlernen, d
 
 **Autor:** {{ site.author }}
 
-*(Platzhalter: Hier können Sie den Text nach Ihren Wünschen anpassen.)*
