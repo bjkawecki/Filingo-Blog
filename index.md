@@ -15,15 +15,13 @@ pagination:
   <ul class="post-list">
     {% for post in paginator.posts %}
     <li>
-      <article class="post-card card">
+      <a href="{{ post.url | relative_url }}" class="post-card card">
         <p class="post-card__meta">
-          {{ post.date | date: "%d.%m.%Y" }}{% if post.category %} · {{ post.category }}{% endif %}
+          {% if site.active_lang == "en" %}{{ post.date | date: "%b %d, %Y" }}{% else %}{{ post.date | date: "%d.%m.%Y" }}{% endif %}{% if post.category %} · {{ post.category }}{% endif %}
         </p>
-        <h2 class="post-card__title">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h2>
+        <h2 class="post-card__title">{{ post.title }}</h2>
         <p class="post-card__description">{{ post.excerpt | strip_html | normalize_whitespace }}</p>
-      </article>
+      </a>
     </li>
     {% endfor %}
   </ul>
@@ -32,11 +30,15 @@ pagination:
 {% if paginator.total_pages > 1 %}
 <nav class="pagination post-list-wrapper" aria-label="Seiten">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">← Neuere Beiträge</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination__btn" aria-label="Neuere Beiträge">
+      {% include icons/arrow-left.html %}
+    </a>
   {% endif %}
-  <span>Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
+  <span class="pagination__info">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Ältere Beiträge →</a>
+    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination__btn" aria-label="Ältere Beiträge">
+      {% include icons/arrow-right.html %}
+    </a>
   {% endif %}
 </nav>
 {% endif %}

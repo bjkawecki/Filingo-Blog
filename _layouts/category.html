@@ -7,7 +7,7 @@ layout: default
   {% for post in page.posts %}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span class="article__meta"> — {{ post.date | date: "%d.%m.%Y" }}</span>
+    <span class="article__meta"> — {% if site.active_lang == "en" %}{{ post.date | date: "%b %d, %Y" }}{% else %}{{ post.date | date: "%d.%m.%Y" }}{% endif %}</span>
   </li>
   {% endfor %}
 </ul>
