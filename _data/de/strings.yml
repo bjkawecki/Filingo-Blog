@@ -13,6 +13,7 @@ home:
 
 category:
   title_prefix: "Kategorie:"
+  nav_label: "Kategorien"
 
 theme:
   light_mode: "Heller Modus"

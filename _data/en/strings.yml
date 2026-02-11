@@ -13,6 +13,7 @@ home:
 
 category:
   title_prefix: "Category:"
+  nav_label: "Categories"
 
 theme:
   light_mode: "Light mode"
