@@ -49,8 +49,14 @@ a:hover {
 
 /* ========== Navbar ========== */
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   width: 100%;
+  background: color-mix(in srgb, var(--mantine-color-body) 58%, transparent);
   border-bottom: 1px solid var(--mantine-color-default-border);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
 }
 
 .navbar__inner {
@@ -143,7 +149,6 @@ a:hover {
   left: 0;
   margin-top: 0.2rem;
   min-width: 10rem;
-  padding: var(--mantine-spacing-xs);
   background: var(--mantine-color-default);
   border: 1px solid var(--mantine-color-default-border);
   border-radius: var(--mantine-radius-sm);
@@ -371,7 +376,7 @@ a:hover {
 
 .home-intro__heading {
   margin: 0 0 var(--mantine-spacing-xs);
-  font-size: var(--mantine-font-size-lg);
+  font-size: var(--mantine-font-size-xl);
   font-weight: var(--mantine-heading-font-weight);
   color: var(--mantine-color-text);
 }
@@ -459,6 +464,33 @@ a:hover {
   --post-meta-color: var(--mantine-color-dark-1);
 }
 
+/* ========== Kategorie-Seite ========== */
+.category-page {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-page__back {
+  display: inline-block;
+  margin-bottom: var(--mantine-spacing-sm);
+  font-size: var(--mantine-font-size-sm);
+  color: inherit;
+  text-decoration: underline;
+}
+
+.category-page__back:hover {
+  color: var(--mantine-color-anchor);
+}
+
+.category-page__title {
+  margin: 0 0 var(--mantine-spacing-xl);
+  font-size: var(--mantine-h1-font-size);
+  line-height: var(--mantine-h1-line-height);
+  font-weight: var(--mantine-heading-font-weight);
+  color: var(--mantine-color-text);
+}
+
 .pagination {
   display: flex;
   align-items: center;
@@ -505,11 +537,19 @@ a:hover {
 
 /* ========== Artikel (Einzelpost) ========== */
 .article {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: var(--mantine-spacing-md) 0;
+}
+
+[data-mantine-color-scheme="dark"] .article {
+  --article-text-color: var(--mantine-color-dark-0);
 }
 
 .article__title {
   margin-bottom: var(--mantine-spacing-sm);
+  color: var(--article-text-color, var(--mantine-color-text));
 }
 
 .article__meta {
@@ -518,10 +558,101 @@ a:hover {
   color: var(--post-meta-color, var(--mantine-color-dimmed));
 }
 
+.article__meta-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.article__meta-link:hover {
+  color: var(--mantine-color-anchor);
+}
+
 .article__content {
+  font-size: var(--mantine-font-size-lg);
   line-height: var(--mantine-line-height-md);
+  color: var(--article-text-color, var(--mantine-color-text));
+}
+
+.link-external {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.link-external:hover {
+  color: var(--mantine-color-anchor);
+}
+
+.link-external__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 0.15em;
 }
 
 .article__content > * + * {
+  margin-top: var(--mantine-spacing-md);
+}
+
+.article__content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--mantine-font-size-md);
+}
+
+.article__content th,
+.article__content td {
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  border: 1px solid var(--mantine-color-default-border);
+  text-align: left;
+}
+
+.article__content th {
+  background: var(--mantine-color-default-hover);
+  font-weight: var(--mantine-heading-font-weight);
+}
+
+.article__content thead th {
+  vertical-align: bottom;
+}
+
+.post-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--mantine-spacing-md);
+  margin-top: var(--mantine-spacing-xl);
+  padding-top: var(--mantine-spacing-lg);
+  border-top: 1px solid var(--mantine-color-default-border);
+}
+
+.post-pagination__link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.post-pagination__link:hover {
+  color: var(--mantine-color-anchor);
+}
+
+.post-pagination__link--prev {
+  margin-left: auto;
+}
+
+.post-pagination__placeholder {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ========== Seiten (About, Impressum) ========== */
+.page-content {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: var(--mantine-font-size-lg);
+  line-height: var(--mantine-line-height-md);
+}
+
+.page-content > * + * {
   margin-top: var(--mantine-spacing-md);
 }

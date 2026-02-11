@@ -2,7 +2,8 @@
 layout: default
 title: Über
 lang: de
-permalink: /about/
+permalink: /ueber/
+narrow_content: true
 ---
 
 # Über

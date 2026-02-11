@@ -11,7 +11,7 @@ Ich habe die Arbeit an meiner Russisch-Sprachlernapp „Bajkal“ eingestellt. E
 
 Beendet ist das Projekt damit jedoch nicht: Ich arbeite bereits an einem Nachfolger, zu dem ich zu einem späteren Zeitpunkt mehr sagen werde.
 
-**Rückblick und Gründe für den Neustart**
+## Rückblick und Gründe für den Neustart
 
 Die Arbeit an „Bajkal“ hat mich über einen langen Zeitraum begleitet. Sie hat mir viel Spaß gemacht, und ich habe in dieser Zeit viel gelernt – konzeptuell, in der Planung, im Design und natürlich in der Programmierung. Gleichzeitig ist mir im Laufe der Entwicklung immer klarer geworden, dass ich für eine Russisch-Sprachlernapp, die meinen eigenen Vorstellungen entspricht, einen anderen, besseren Ansatz brauche.
 
@@ -27,7 +27,7 @@ Auch das Dashboard hat mich nicht mehr überzeugt. „Bajkal“ verfügte über 
 
 Schließlich war auch das Datenmodell zu starr. Es hat zwar Spaß gemacht, die verschiedenen Wortarten mit all ihren Sonderfällen und Ausnahmen sauber zu modellieren. Für den Nachfolger habe ich mich jedoch für einen hybriden Ansatz aus festen Feldern und JSONB entschieden. Das führt auf der anderen Seite zu einer breiteren Data-Layer-Struktur mit strengerer Validierung der Wortdaten vor dem Import in die Datenbank.
 
-**Bewährtes, neue Funktionen und Ausblick**
+## Bewährtes, neue Funktionen und Ausblick
 
 Trotz dieser Punkte gibt es viele Aspekte, die ich für das Nachfolgeprojekt beibehalten möchte. Das öffentliche Wörterbuch zum Nachschlagen von Bedeutungen und grammatischen Formen ist mir weiterhin sehr wichtig. Ich möchte hier nach wie vor eine sinnvolle Ergänzung zu bestehenden Online-Russisch-Wörterbüchern anbieten. Ebenso bleibt der Lernstapel-Ansatz mit SuperMemo-Algorithmus erhalten; abgesehen vom UI-Design sind hier kaum Änderungen geplant. Auch eine Übersicht über den Lernfortschritt wird es in der nächsten Version wieder geben.
 

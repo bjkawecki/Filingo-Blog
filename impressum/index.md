@@ -3,6 +3,7 @@ layout: default
 title: Impressum
 lang: de
 permalink: /impressum/
+narrow_content: true
 ---
 
 # Impressum

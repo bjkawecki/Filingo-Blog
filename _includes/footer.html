@@ -4,8 +4,8 @@
       {% assign f = site.data[site.active_lang].strings.footer %}
       {% capture blog_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{% endcapture %}
       {% capture feed_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}feed.xml{% endcapture %}
-      {% capture about_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}about/{% endcapture %}
-      {% capture imprint_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}impressum/{% endcapture %}
+      {% capture about_href %}{{ site.baseurl }}{{ site.data[site.active_lang].strings.footer.about_path }}{% endcapture %}
+      {% capture imprint_href %}{{ site.baseurl }}{{ site.data[site.active_lang].strings.footer.imprint_path }}{% endcapture %}
       <a href="{{ blog_href }}">{{ f.blog }}</a>
       <span class="footer__sep" aria-hidden="true"></span>
       <a href="{{ about_href }}">{{ f.about }}</a>

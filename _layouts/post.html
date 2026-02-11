@@ -2,12 +2,33 @@
 layout: default
 ---
 <article class="article">
+  {% capture blog_index_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{% endcapture %}
+  <a href="{{ blog_index_href }}" class="category-page__back">{{ site.data[site.active_lang].strings.category.all_posts }}</a>
   <h1 class="article__title">{{ page.title }}</h1>
   <div class="article__meta">
     {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{% if site.active_lang == "en" %}{{ page.date | date: "%b %d, %Y" }}{% else %}{{ page.date | date: "%d.%m.%Y" }}{% endif %}</time>{% endif %}
-    {% if page.category %} · {{ page.category }}{% endif %}
+    {% if page.category %}
+    {% assign cat_slug = nil %}
+    {% assign cat_name = page.category %}
+    {% for c in site.data.categories %}
+    {% assign d = c[1] %}
+    {% if page.category == d.de.name or page.category == d.en.name %}
+    {% assign cat_slug = d[site.active_lang].slug %}
+    {% assign cat_name = d[site.active_lang].name %}
+    {% break %}
+    {% endif %}
+    {% endfor %}
+    {% if cat_slug %}
+    {% assign cat_base = site.data[site.active_lang].strings.category.path_segment %}
+    {% capture category_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{{ cat_base }}/{{ cat_slug }}/{% endcapture %}
+    · <a href="{{ category_href }}" class="article__meta-link">{{ cat_name }}</a>
+    {% else %}
+    · {{ page.category }}
+    {% endif %}
+    {% endif %}
   </div>
   <div class="article__content">
     {{ content }}
   </div>
+  {% include post_pagination.html %}
 </article>

@@ -6,6 +6,8 @@ pagination:
   newer_posts: "Neuere Beiträge"
   older_posts: "Ältere Beiträge"
   aria_label: "Seiten"
+  next_post: "Nächster Eintrag"
+  previous_post: "Vorheriger Eintrag"
 
 home:
   welcome: "Willkommen"
@@ -14,6 +16,8 @@ home:
 category:
   title_prefix: "Kategorie:"
   nav_label: "Kategorien"
+  all_posts: "Alle Blog-Einträge"
+  path_segment: "kategorie"
 
 theme:
   light_mode: "Heller Modus"
@@ -25,4 +29,6 @@ footer:
   blog: "Blog"
   about: "Über"
   imprint: "Impressum"
+  about_path: "/ueber/"
+  imprint_path: "/impressum/"
   built_with: "Erstellt mit Jekyll & GitHub Pages."

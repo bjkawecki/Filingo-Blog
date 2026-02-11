@@ -7,7 +7,7 @@ locale: de
 page_id: lern-apps-anki
 ---
 
-<a class="inline-flex items-center gap-0.5 transition hover:text-accent-600 dark:hover:text-accent-200" href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki{% include icons/external-link.html %}</a> ist ein Paradebeispiel für ein hochgradig flexibles Lernwerkzeug. Es eignet sich nicht nur zum Russischlernen, sondern für praktisch jedes Lernziel, bei dem es darum geht, sich viel Lernstoff effizient einzuprägen. Das kann sowohl Vor- als auch Nachteile haben.
+<a class="link-external" href="https://apps.ankiweb.net/" target="_blank" rel="noopener noreferrer">Anki{% include icons/external-link.html %}</a> ist ein Paradebeispiel für ein hochgradig flexibles Lernwerkzeug. Es eignet sich nicht nur zum Russischlernen, sondern für praktisch jedes Lernziel, bei dem es darum geht, sich viel Lernstoff effizient einzuprägen. Das kann sowohl Vor- als auch Nachteile haben.
 
 Die App basiert auf dem Prinzip der "verteilten Wiederholung" (spaced repetition), also der systematischen Wiederholung mit zunehmenden Zeitabständen, was das Langzeitgedächtnis besonders effizient trainiert.
 

@@ -6,16 +6,18 @@
     </a>
     <div class="navbar__actions">
 
-      {% capture about_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}about/{% endcapture %}
+      {% capture about_href %}{{ site.baseurl }}{{ site.data[site.active_lang].strings.footer.about_path }}{% endcapture %}
       <a class="navbar__link" href="{{ about_href }}">{{ site.data[site.active_lang].strings.footer.about }}</a>
 
       <div class="navbar__dropdown">
         <button type="button" class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="navbar-categories-menu" id="navbar-categories-btn">{{ site.data[site.active_lang].strings.category.nav_label }}</button>
         <div class="navbar__dropdown-menu" id="navbar-categories-menu" role="menu" aria-labelledby="navbar-categories-btn">
-          {% for category in site.categories %}
-          {% capture category_slug %}{{ category[0] | downcase }}{% endcapture %}
-          {% capture category_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}category/{{ category_slug }}/{% endcapture %}
-          <a class="navbar__dropdown-item" role="menuitem" href="{{ category_href }}">{{ category[0] }}</a>
+          {% for cat in site.data.categories %}
+          {% assign cat_slug = cat[1][site.active_lang].slug %}
+          {% assign cat_name = cat[1][site.active_lang].name %}
+          {% assign cat_base = site.data[site.active_lang].strings.category.path_segment %}
+          {% capture category_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{{ cat_base }}/{{ cat_slug }}/{% endcapture %}
+          <a class="navbar__dropdown-item" role="menuitem" href="{{ category_href }}">{{ cat_name }}</a>
           {% endfor %}
         </div>
       </div>

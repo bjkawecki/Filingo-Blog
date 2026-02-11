@@ -1,0 +1,16 @@
+# Kanonische Kategorie-IDs mit Übersetzungen (Slug + Anzeigename) pro Sprache.
+# Slug = URL-Teil (z. B. /category/:slug/). Posts nutzen category: mit DE- oder EN-Namen.
+didactics:
+  de:
+    slug: didaktik
+    name: Didaktik
+  en:
+    slug: didactics
+    name: Didactics
+russian:
+  de:
+    slug: russisch
+    name: Russisch
+  en:
+    slug: russian
+    name: Russian

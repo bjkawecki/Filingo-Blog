@@ -1,13 +1,33 @@
 ---
 layout: default
 ---
-<h1>{{ site.data[site.active_lang].strings.category.title_prefix }} {{ page.title }}</h1>
-
-<ul class="post-list">
-  {% for post in page.posts %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span class="article__meta"> — {% if site.active_lang == "en" %}{{ post.date | date: "%b %d, %Y" }}{% else %}{{ post.date | date: "%d.%m.%Y" }}{% endif %}</span>
-  </li>
-  {% endfor %}
-</ul>
+{% assign url_parts = page.url | split: '/' %}
+{% assign category_slug = nil %}
+{% for part in url_parts %}
+  {% if part != '' %}{% assign category_slug = part %}{% endif %}
+{% endfor %}
+{% assign category_title = page.title %}
+{% for c in site.data.categories %}
+  {% if c[1][site.active_lang].slug == category_slug %}
+    {% assign category_title = c[1][site.active_lang].name %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% capture blog_index_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{% endcapture %}
+<div class="category-page">
+  <a href="{{ blog_index_href }}" class="category-page__back">{{ site.data[site.active_lang].strings.category.all_posts }}</a>
+  <h1 class="category-page__title">{{ site.data[site.active_lang].strings.category.title_prefix }} {{ category_title }}</h1>
+  <ul class="post-list">
+    {% for post in page.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}" class="post-card card">
+        <p class="post-card__meta">
+          {% if site.active_lang == "en" %}{{ post.date | date: "%b %d, %Y" }}{% else %}{{ post.date | date: "%d.%m.%Y" }}{% endif %}
+        </p>
+        <h2 class="post-card__title">{{ post.title }}</h2>
+        <p class="post-card__description">{{ post.excerpt | strip_html | normalize_whitespace }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

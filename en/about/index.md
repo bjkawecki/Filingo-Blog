@@ -3,6 +3,7 @@ layout: default
 title: About
 lang: en
 permalink: /about/
+narrow_content: true
 ---
 
 # About

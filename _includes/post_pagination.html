@@ -1,0 +1,27 @@
+{% assign all_posts = site.posts | sort: 'date' | reverse %}
+{% assign current_index = nil %}
+{% for post in all_posts %}
+  {% if post.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+<nav class="post-pagination" aria-label="{{ site.data[site.active_lang].strings.pagination.aria_label }}">
+  {% if current_index != nil %}
+    {% assign next_index = current_index | minus: 1 %}
+    {% if next_index >= 0 %}
+      {% assign next_post = all_posts[next_index] %}
+      <a class="post-pagination__link post-pagination__link--next" href="{{ next_post.url | relative_url }}">{{ site.data[site.active_lang].strings.pagination.next_post }}</a>
+    {% else %}
+      <span class="post-pagination__placeholder"></span>
+    {% endif %}
+
+    {% assign prev_index = current_index | plus: 1 %}
+    {% if prev_index < all_posts.size %}
+      {% assign prev_post = all_posts[prev_index] %}
+      <a class="post-pagination__link post-pagination__link--prev" href="{{ prev_post.url | relative_url }}">{{ site.data[site.active_lang].strings.pagination.previous_post }}</a>
+    {% else %}
+      <span class="post-pagination__placeholder"></span>
+    {% endif %}
+  {% endif %}
+</nav>

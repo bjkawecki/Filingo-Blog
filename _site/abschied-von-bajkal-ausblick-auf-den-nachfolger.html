@@ -30,7 +30,7 @@
     <div class="navbar__actions">
 
       
-      <a class="navbar__link" href="/about/">Über</a>
+      <a class="navbar__link" href="/ueber/">Über</a>
 
       <div class="navbar__dropdown">
         <button type="button" class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="navbar-categories-menu" id="navbar-categories-btn">Kategorien</button>
@@ -38,11 +38,15 @@
           
           
           
-          <a class="navbar__dropdown-item" role="menuitem" href="/category/didaktik/">Didaktik</a>
+          
+          
+          <a class="navbar__dropdown-item" role="menuitem" href="/kategorie/didaktik/">Didaktik</a>
           
           
           
-          <a class="navbar__dropdown-item" role="menuitem" href="/category/russisch/">Russisch</a>
+          
+          
+          <a class="navbar__dropdown-item" role="menuitem" href="/kategorie/russisch/">Russisch</a>
           
         </div>
       </div>
@@ -78,18 +82,38 @@
   </div>
 </header>
   <div class="container">
+    
     <article class="article">
+  
+  <a href="/" class="category-page__back">Alle Blog-Einträge</a>
   <h1 class="article__title">Abschied von Bajkal, Ausblick auf den Nachfolger</h1>
   <div class="article__meta">
     <time datetime="2026-02-01T00:00:00+01:00">01.02.2026</time>
-     · Russisch
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    · <a href="/kategorie/russisch/" class="article__meta-link">Russisch</a>
+    
+    
   </div>
   <div class="article__content">
     <p>Ich habe die Arbeit an meiner Russisch-Sprachlernapp „Bajkal“ eingestellt. Entsprechend ist die Anwendung unter der Domain bajkal-app.de seit einigen Monaten nicht mehr erreichbar.</p>
 
 <p>Beendet ist das Projekt damit jedoch nicht: Ich arbeite bereits an einem Nachfolger, zu dem ich zu einem späteren Zeitpunkt mehr sagen werde.</p>
 
-<p><strong>Rückblick und Gründe für den Neustart</strong></p>
+<h2 id="rückblick-und-gründe-für-den-neustart">Rückblick und Gründe für den Neustart</h2>
 
 <p>Die Arbeit an „Bajkal“ hat mich über einen langen Zeitraum begleitet. Sie hat mir viel Spaß gemacht, und ich habe in dieser Zeit viel gelernt – konzeptuell, in der Planung, im Design und natürlich in der Programmierung. Gleichzeitig ist mir im Laufe der Entwicklung immer klarer geworden, dass ich für eine Russisch-Sprachlernapp, die meinen eigenen Vorstellungen entspricht, einen anderen, besseren Ansatz brauche.</p>
 
@@ -105,7 +129,7 @@
 
 <p>Schließlich war auch das Datenmodell zu starr. Es hat zwar Spaß gemacht, die verschiedenen Wortarten mit all ihren Sonderfällen und Ausnahmen sauber zu modellieren. Für den Nachfolger habe ich mich jedoch für einen hybriden Ansatz aus festen Feldern und JSONB entschieden. Das führt auf der anderen Seite zu einer breiteren Data-Layer-Struktur mit strengerer Validierung der Wortdaten vor dem Import in die Datenbank.</p>
 
-<p><strong>Bewährtes, neue Funktionen und Ausblick</strong></p>
+<h2 id="bewährtes-neue-funktionen-und-ausblick">Bewährtes, neue Funktionen und Ausblick</h2>
 
 <p>Trotz dieser Punkte gibt es viele Aspekte, die ich für das Nachfolgeprojekt beibehalten möchte. Das öffentliche Wörterbuch zum Nachschlagen von Bedeutungen und grammatischen Formen ist mir weiterhin sehr wichtig. Ich möchte hier nach wie vor eine sinnvolle Ergänzung zu bestehenden Online-Russisch-Wörterbüchern anbieten. Ebenso bleibt der Lernstapel-Ansatz mit SuperMemo-Algorithmus erhalten; abgesehen vom UI-Design sind hier kaum Änderungen geplant. Auch eine Übersicht über den Lernfortschritt wird es in der nächsten Version wieder geben.</p>
 
@@ -114,8 +138,26 @@
 <p>Das sind zunächst die wichtigsten Punkte. Es wird noch einige Zeit dauern, bis die nächste Version meiner Russisch-Lernapp veröffentlicht wird. Dieses Mal möchte ich jedoch von Beginn an mindestens die Lernstufen A1 bis B2, idealerweise sogar bis C1, abdecken. Wenn das gelungen ist und ich mit dem Ergebnis zufrieden bin, sollen anschließend auch Bereiche wie Grammatik, Hörverstehen und Hör-Seh-Verstehen folgen.</p>
 
   </div>
-</article>
+  
 
+
+
+<nav class="post-pagination" aria-label="Seiten">
+  
+    
+    
+      <span class="post-pagination__placeholder"></span>
+    
+
+    
+    
+      
+      <a class="post-pagination__link post-pagination__link--prev" href="/lern-apps-interaktiv-russisch-lernen-anki.html">Vorheriger Eintrag</a>
+    
+  
+</nav>
+</article>
+    
   </div>
   <footer class="footer" role="contentinfo">
   <div class="footer__inner">
@@ -127,7 +169,7 @@
       
       <a href="/">Blog</a>
       <span class="footer__sep" aria-hidden="true"></span>
-      <a href="/about/">Über</a>
+      <a href="/ueber/">Über</a>
       <span class="footer__sep" aria-hidden="true"></span>
       <a href="/impressum/">Impressum</a>
     </nav>
