@@ -130,28 +130,33 @@ a:hover {
   padding: var(--mantine-spacing-xs);
   border: 1px solid var(--theme-toggle-border);
   border-radius: var(--mantine-radius-sm);
-  background: var(--mantine-color-default);
+  background: var(--theme-toggle-bg, var(--mantine-color-default));
+  border-color: var(--theme-toggle-border, var(--mantine-color-default-border));
   color: var(--mantine-color-text);
   cursor: pointer;
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 [data-mantine-color-scheme="light"] .theme-toggle {
+  --theme-toggle-bg: var(--mantine-color-default);
   --theme-toggle-border: var(--mantine-color-gray-3);
 }
 [data-mantine-color-scheme="light"] .theme-toggle:hover {
+  --theme-toggle-bg: var(--mantine-color-default-hover);
   --theme-toggle-border: var(--mantine-color-gray-4);
 }
 
 [data-mantine-color-scheme="dark"] .theme-toggle {
-  --theme-toggle-border: var(--mantine-color-dark-5);
+  --theme-toggle-bg: transparent;
+  --theme-toggle-border: transparent;
 }
 [data-mantine-color-scheme="dark"] .theme-toggle:hover {
+  --theme-toggle-bg: var(--mantine-color-default-hover);
   --theme-toggle-border: var(--mantine-color-dark-4);
 }
 
 .theme-toggle:hover {
-  background: var(--mantine-color-default-hover);
+  background: var(--theme-toggle-bg, var(--mantine-color-default-hover));
 }
 
 .theme-toggle:focus-visible {
@@ -193,6 +198,58 @@ a:hover {
   }
 }
 
+/* ========== Footer ========== */
+.footer {
+  margin-top: auto;
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+  border-top: 1px solid var(--mantine-color-default-border);
+}
+
+.footer__inner {
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0 var(--mantine-spacing-md);
+  font-size: var(--mantine-font-size-sm);
+  color: var(--post-meta-color, var(--mantine-color-dimmed));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 var(--mantine-spacing-md);
+  margin-bottom: var(--mantine-spacing-lg);
+}
+
+.footer__nav a {
+  color: var(--mantine-color-anchor);
+}
+
+.footer__sep {
+  color: var(--post-meta-color, var(--mantine-color-dimmed));
+  user-select: none;
+  margin: 0 0.125rem;
+}
+
+.footer__copy {
+  margin: 0;
+  max-width: 36em;
+}
+
+.footer a {
+  color: var(--mantine-color-anchor);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 /* ========== Karten / Blöcke (z. B. Post-Teaser) ========== */
 .card {
   padding: var(--mantine-spacing-md);
@@ -227,6 +284,25 @@ a:hover {
   background: var(--mantine-primary-color-filled-hover);
 }
 
+/* ========== Startseite: Willkommensbereich ========== */
+.home-intro {
+  margin-bottom: var(--mantine-spacing-xl);
+}
+
+.home-intro__heading {
+  margin: 0 0 var(--mantine-spacing-xs);
+  font-size: var(--mantine-font-size-lg);
+  font-weight: var(--mantine-heading-font-weight);
+  color: var(--mantine-color-text);
+}
+
+.home-intro__text {
+  margin: 0;
+  font-size: var(--mantine-font-size-md);
+  line-height: var(--mantine-line-height-md);
+  color: var(--post-meta-color, var(--mantine-color-dimmed));
+}
+
 /* ========== Post-Liste ========== */
 .post-list-wrapper {
   max-width: 40rem;
@@ -257,14 +333,13 @@ a:hover {
 
 .post-card:hover {
   text-decoration: none;
-  transform: scale(1.002);
   background: var(--post-card-hover-bg, var(--mantine-color-default-hover));
   border-color: var(--post-card-hover-border, var(--mantine-color-anchor));
   box-shadow: var(--post-card-hover-shadow, 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.04));
 }
 
 [data-mantine-color-scheme="light"] .post-card:hover {
-  --post-card-hover-bg: var(--mantine-color-gray-0);
+  --post-card-hover-bg: var(--mantine-color-default);
   --post-card-hover-border: var(--mantine-color-blue-3);
   --post-card-hover-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.04);
 }

@@ -3,4 +3,15 @@
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 <link rel="stylesheet" href="{{ '/assets/css/mantine.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script>
+(function(){
+  var s = document.documentElement;
+  try {
+    var v = localStorage.getItem('mantine-color-scheme');
+    if (v === 'dark') s.setAttribute('data-mantine-color-scheme', 'dark');
+    else if (v === 'light') s.removeAttribute('data-mantine-color-scheme');
+    else if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) s.setAttribute('data-mantine-color-scheme', 'dark');
+  } catch (e) {}
+})();
+</script>
 <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>

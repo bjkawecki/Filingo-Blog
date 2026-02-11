@@ -1,0 +1,19 @@
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <nav class="footer__nav" aria-label="{{ site.data[site.active_lang].strings.footer.nav_aria }}">
+      {% assign f = site.data[site.active_lang].strings.footer %}
+      {% capture blog_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{% endcapture %}
+      {% capture feed_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}feed.xml{% endcapture %}
+      {% capture about_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}about/{% endcapture %}
+      {% capture imprint_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}impressum/{% endcapture %}
+      <a href="{{ blog_href }}">{{ f.blog }}</a>
+      <span class="footer__sep" aria-hidden="true"></span>
+      <a href="{{ about_href }}">{{ f.about }}</a>
+      <span class="footer__sep" aria-hidden="true"></span>
+      <a href="{{ imprint_href }}">{{ f.imprint }}</a>
+    </nav>
+    <p class="footer__copy">
+      © {{ site.time | date: '%Y' }} {{ site.title }} · {{ f.built_with }}
+    </p>
+  </div>
+</footer>

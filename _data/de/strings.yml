@@ -1,0 +1,27 @@
+# UI-Übersetzungen Deutsch
+
+pagination:
+  page: "Seite"
+  of: "von"
+  newer_posts: "Neuere Beiträge"
+  older_posts: "Ältere Beiträge"
+  aria_label: "Seiten"
+
+home:
+  welcome: "Willkommen"
+  welcome_text: "Auf diesem Blog dreht sich alles um Filingo, Russisch lernen und digitale Didaktik."
+
+category:
+  title_prefix: "Kategorie:"
+
+theme:
+  light_mode: "Heller Modus"
+  dark_mode: "Dunkler Modus"
+  toggle_aria: "Zwischen Hell- und Dunkelmodus wechseln"
+
+footer:
+  nav_aria: "Footer-Navigation"
+  blog: "Blog"
+  about: "Über"
+  imprint: "Impressum"
+  built_with: "Erstellt mit Jekyll & GitHub Pages."

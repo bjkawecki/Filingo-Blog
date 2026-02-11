@@ -1,0 +1,27 @@
+# UI translations English
+
+pagination:
+  page: "Page"
+  of: "of"
+  newer_posts: "Newer posts"
+  older_posts: "Older posts"
+  aria_label: "Pages"
+
+home:
+  welcome: "Welcome"
+  welcome_text: "This blog is all about Filingo, learning Russian, and digital pedagogy."
+
+category:
+  title_prefix: "Category:"
+
+theme:
+  light_mode: "Light mode"
+  dark_mode: "Dark mode"
+  toggle_aria: "Switch between light and dark mode"
+
+footer:
+  nav_aria: "Footer navigation"
+  blog: "Blog"
+  about: "About"
+  imprint: "Imprint"
+  built_with: "Built with Jekyll & GitHub Pages."

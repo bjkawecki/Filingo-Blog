@@ -7,9 +7,10 @@ pagination:
   sort_reverse: true
 ---
 
-# {{ site.title }}
-
-{{ site.description }}
+<header class="home-intro post-list-wrapper">
+  <h2 class="home-intro__heading">{{ site.data[site.active_lang].strings.home.welcome }}</h2>
+  <p class="home-intro__text">{{ site.data[site.active_lang].strings.home.welcome_text }}</p>
+</header>
 
 <div class="post-list-wrapper">
   <ul class="post-list">
@@ -28,15 +29,16 @@ pagination:
 </div>
 
 {% if paginator.total_pages > 1 %}
-<nav class="pagination post-list-wrapper" aria-label="Seiten">
+{% assign s = site.data[site.active_lang].strings.pagination %}
+<nav class="pagination post-list-wrapper" aria-label="{{ s.aria_label }}">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination__btn" aria-label="Neuere Beiträge">
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination__btn" aria-label="{{ s.newer_posts }}">
       {% include icons/arrow-left.html %}
     </a>
   {% endif %}
-  <span class="pagination__info">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span>
+  <span class="pagination__info">{{ s.page }} {{ paginator.page }} {{ s.of }} {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination__btn" aria-label="Ältere Beiträge">
+    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination__btn" aria-label="{{ s.older_posts }}">
       {% include icons/arrow-right.html %}
     </a>
   {% endif %}

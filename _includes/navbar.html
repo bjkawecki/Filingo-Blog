@@ -16,7 +16,7 @@
           {% unless forloop.last %}<span class="lang-switcher__sep" aria-hidden="true">/</span>{% endunless %}
         {% endfor %}
       </nav>
-      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Dark-/Hellmodus umschalten">
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="{{ site.data[site.active_lang].strings.theme.toggle_aria }}">
         <span class="theme-toggle__icon theme-toggle__icon--light" hidden aria-hidden="true">{% include icons/light-mode.html %}</span>
         <span class="theme-toggle__icon theme-toggle__icon--dark" aria-hidden="true">{% include icons/dark-mode.html %}</span>
       </button>
