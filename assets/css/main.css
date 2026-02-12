@@ -709,6 +709,19 @@ a:hover {
   margin-top: var(--mantine-spacing-md);
 }
 
+.contact-list {
+  list-style: disc;
+  padding-left: 1.5em;
+}
+
+.contact-list li {
+  margin-top: 0.25em;
+}
+
+.contact-list li:first-child {
+  margin-top: 0;
+}
+
 /* ========== 404 ========== */
 .page-404 {
   text-align: center;
