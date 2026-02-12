@@ -18,7 +18,7 @@ Eine weitere Bedingung wird sein, dass sich das Angebot an ein deutschsprachiges
 {% assign anki = site.posts | where: "title", "Lern-Apps im Test: Anki" | first %}
 {% assign babbel = site.posts | where: "title", "Lern-Apps im Test: Babbel" | first %}
 
-| Produkt                                      | Russisch-Fokus | Kosten                             | Plattform |
-| :------------------------------------------- | :------------- | :--------------------------------- | :-------- |
-| [Anki]({{ site.baseurl }}{{ anki.url }})     | Nein           | Nein (außer iOS)                   | alle      |
-| [Babbel]({{ site.baseurl }}{{ babbel.url }}) | Nein           | Monatlich 14 € oder einmalig 300 € | alle      |
+| Produkt                                      | Russisch-Fokus | Kosten                               | Plattform |
+| :------------------------------------------- | :------------- | :----------------------------------- | :-------- |
+| [Anki]({{ site.baseurl }}{{ anki.url }})     | Nein           | Nein (außer iOS)                     | alle      |
+| [Babbel]({{ site.baseurl }}{{ babbel.url }}) | Nein           | Monatlich 9-18 € oder einmalig 300 € | alle      |

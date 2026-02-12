@@ -15,8 +15,10 @@ Another requirement is that the offering must be aimed at a **German-speaking au
 
 ## Reviewed Language Learning Apps
 
-{% assign target = site.posts | where: "title", "Lern-Apps im Test: Anki" | first %}
+{% assign anki = site.posts | where: "title", "Language Learning Apps Reviewed: Anki" | first %}
+{% assign babbel = site.posts | where: "title", "Language Learning Apps Reviewed: Babbel" | first %}
 
-| Product                                    | Russian Focus | Cost            | Platform |
-| :----------------------------------------- | :------------ | :-------------- | :------- |
-| [Anki]({{ site.baseurl }}{{ target.url }}) | No            | No (except iOS) | all      |
+| Product                                      | Russian Focus | Cost                                         | Platform |
+| :------------------------------------------- | :------------ | :------------------------------------------- | :------- |
+| [Anki]({{ site.baseurl }}{{ anki.url }})     | No            | No (except iOS)                              | all      |
+| [Babbel]({{ site.baseurl }}{{ babbel.url }}) | No            | Subscription: € 9–18/month or one-time € 300 | all      |

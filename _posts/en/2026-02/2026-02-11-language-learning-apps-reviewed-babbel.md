@@ -34,6 +34,6 @@ Babbel advertises that more than 150 language experts design courses so that lea
 
 The company’s commercial success is notable. Besides the product itself, its early position in the market may play a role. Podcasts and live lessons are also on offer. Based on the course material I tested, however, I find it hard to see what sets the offering apart.
 
-{% assign target = site.posts | where: "title", "Lern-Apps: Interaktiv Russisch lernen" | first %}
+{% assign target = site.posts | where: "title", "Language Learning Apps: Learning Russian Interactively" | first %}
 
 _An overview of all reviewed language learning apps can be found [here]({{ site.baseurl }}{{ target.url }})._

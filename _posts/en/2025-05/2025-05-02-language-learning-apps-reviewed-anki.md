@@ -41,6 +41,6 @@ Anki is a powerful learning platform for those willing to invest time and struct
 
 However, for beginners and self-taught learners without prior knowledge or study routines, the app may be too open-ended and technical.
 
-{% assign target = site.posts | where: "title", "Lern-Apps: Interaktiv Russisch lernen" | first %}
+{% assign target = site.posts | where: "title", "Language Learning Apps: Learning Russian Interactively" | first %}
 
 _An overview of all reviewed language learning apps can be found [here]({{ site.baseurl }}{{ target.url }})._
