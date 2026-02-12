@@ -7,7 +7,7 @@ locale: de
 page_id: lern-apps-babbel
 ---
 
-<a class="link-external" href="https://de.babbel.com/" target="_blank" rel="noopener noreferrer">Babbel{% include icons/external-link.html %}</a> war ein früher Akteur im Sprachlernsegment. Das Berliner Unternehmen startete 2007 mit einem Spanischkurs und bietet inzwischen 14 Sprachen an. Der Jahresumsatz liegt bei über 200 Millionen Euro.
+<a class="link-external" href="https://de.babbel.com/" target="_blank" rel="noopener noreferrer">Babbel{% include icons/external-link.html %}</a> war ein früher Akteur im Sprachlernsegment. Das Berliner Unternehmen startete 2007 mit einem Spanischkurs und bietet inzwischen 14 Sprachen an. Jahresumsatz: 200 Millionen Euro.
 
 Babbel wird häufig Duolingo gegenübergestellt – als strukturiertere Plattform mit stärkerem Grammatikfokus und Praxisbezug. Diesen Anspruch wollte ich mir am Beispiel des Russischkurses ansehen.
 
