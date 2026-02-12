@@ -8,15 +8,17 @@ narrow_content: true
 
 # About the Filingo Blog
 
-Filingo is the successor to Bajkal, my first Russian learning web app. On this blog I gather my thoughts on digital learning, especially Russian, and on Filingo's development.
+Filingo is the successor to Bajkal, my first Russian learning web app. On this blog I document my reflections on digital learning – with a focus on Russian – and on Filingo’s development.
 
-If you want to use Filingo or understand the ideas behind it, you’ll find the context here. Filingo is still in development. Updates are published here.
+If you want to use Filingo or understand the underlying concepts, you’ll find the context here. The project is currently in development; updates are published here on a regular basis.
 
 ## About me
 
-I have a degree in Russian studies and work as a web developer. In 2020 I started building a Russian learning web app. The trigger was my experience that language acquisition – especially for less widely spoken languages – often asks too much of learners.
+My name is Björn Kawecki. I have a degree in Russian studies and work as a web developer. In 2020 I started developing a Russian learning web app. The starting point was my observation that less widely spoken languages often overwhelm learners in a structural way – less because of their complexity than because of how content is conveyed.
 
-I believe there’s a need for relief through structured and efficient presentation of knowledge. I also believe that digital media in pedagogy are still underdeveloped and their potential remains to be explored.
+## Digital learning
+
+I am convinced that the didactic potential of digital media is not yet fully realised. Learners – whether at school, university, or in self-study – need clearly structured content that reduces complexity and provides orientation. With this project I aim to contribute to that.
 
 ## Contact
 
