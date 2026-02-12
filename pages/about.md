@@ -8,9 +8,9 @@ narrow_content: true
 
 # Über den Filingo-Blog
 
-Auf diesem Blog fasse ich meine Gedanken zu digitalem Lernen, speziell Russisch, und den Entwicklungsstand von Filingo zusammen, dem Nachfolgeprojekt von **Bajkal**, meiner ersten Russisch-Lern-Webapp.
+Filingo ist das Nachfolgeprojekt von **Bajkal**, meiner ersten Russisch-Lern-Webapp. Auf diesem Blog fasse ich meine Gedanken zu digitalem Lernen, speziell Russisch, und zum Entwicklungsstand von Filingo zusammen.
 
-Wer Filingo nutzen oder die Ideen dahinter verstehen will, findet hier den Kontext. Filingo ist aktuell noch in Entwicklung. Neuigkeiten werden hier veröffentlicht.
+Wer Filingo nutzen oder die Ideen dahinter verstehen will, findet hier den Kontext. Filingo befindet sich aktuell noch in Entwicklung. Neuigkeiten werden hier veröffentlicht.
 
 ## Über mich
 
