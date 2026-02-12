@@ -15,8 +15,10 @@ Eine weitere Bedingung wird sein, dass sich das Angebot an ein deutschsprachiges
 
 ## Getestete Lern-Apps
 
-{% assign target = site.posts | where: "title", "Lern-Apps im Test: Anki" | first %}
+{% assign anki = site.posts | where: "title", "Lern-Apps im Test: Anki" | first %}
+{% assign babbel = site.posts | where: "title", "Lern-Apps im Test: Babbel" | first %}
 
-| Produkt                                    | Russisch-Fokus | Kosten           | Plattform |
-| :----------------------------------------- | :------------- | :--------------- | :-------- |
-| [Anki]({{ site.baseurl }}{{ target.url }}) | Nein           | Nein (außer iOS) | alle      |
+| Produkt                                      | Russisch-Fokus | Kosten                             | Plattform |
+| :------------------------------------------- | :------------- | :--------------------------------- | :-------- |
+| [Anki]({{ site.baseurl }}{{ anki.url }})     | Nein           | Nein (außer iOS)                   | alle      |
+| [Babbel]({{ site.baseurl }}{{ babbel.url }}) | Nein           | Monatlich 14 € oder einmalig 300 € | alle      |
