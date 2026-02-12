@@ -12,7 +12,7 @@ On this blog I gather my thoughts on digital learning, especially Russian, and o
 
 ## About me
 
-I’m a trained Russist and web developer. In 2020 I started building a Russian learning web app. The trigger was my experience that language acquisition – especially for less widely spoken languages – often asks too much of learners. I believe there’s a need for relief through structured and efficient presentation of knowledge. I also believe that digital media in pedagogy are still underdeveloped and their potential remains to be explored.
+I have a degree in Russian studies and work as a web developer. In 2020 I started building a Russian learning web app. The trigger was my experience that language acquisition – especially for less widely spoken languages – often asks too much of learners. I believe there’s a need for relief through structured and efficient presentation of knowledge. I also believe that digital media in pedagogy are still underdeveloped and their potential remains to be explored.
 
 ## Contact
 

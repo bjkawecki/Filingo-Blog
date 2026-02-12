@@ -2,16 +2,16 @@
 layout: default
 title: Imprint
 lang: en
-permalink: /imprint/
+permalink: /en/imprint/
 narrow_content: true
 ---
 
 # Imprint
 
-Information according to § 5 TMG (German Teleservices Act)
+This is a private blog. It is not operated commercially or for profit; there is therefore no legal requirement for a full imprint under § 5 TMG / § 18 MStV (German law). For transparency, the operator and contact details are given below.
 
 **Responsible for content:**  
 {{ site.author }}  
-{{ site.email }}
+Email: [{{ site.email }}](mailto:{{ site.email }})
 
-*This is a placeholder. Please add the complete imprint details (address, VAT ID if applicable, responsible body for editorial content, etc.) according to your legal requirements.*
+**Disclaimer:** No responsibility is taken for the content of linked external sites.
