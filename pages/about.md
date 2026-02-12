@@ -8,15 +8,17 @@ narrow_content: true
 
 # Über den Filingo-Blog
 
-Filingo ist das Nachfolgeprojekt von **Bajkal**, meiner ersten Russisch-Lern-Webapp. Auf diesem Blog fasse ich meine Gedanken zu digitalem Lernen, speziell Russisch, und zum Entwicklungsstand von Filingo zusammen.
+Filingo ist das Nachfolgeprojekt von Bajkal, meiner ersten Russisch-Lern-Webapp. Auf diesem Blog dokumentiere ich meine Überlegungen zu digitalem Lernen – mit Schwerpunkt auf Russisch – sowie den Entwicklungsstand von Filingo.
 
-Wer Filingo nutzen oder die Ideen dahinter verstehen will, findet hier den Kontext. Filingo befindet sich aktuell noch in Entwicklung. Neuigkeiten werden hier veröffentlicht.
+Wer Filingo nutzen oder die zugrunde liegenden Konzepte verstehen möchte, findet hier den Kontext. Das Projekt befindet sich aktuell in Entwicklung; Neuigkeiten werden regelmäßig hier veröffentlicht.
 
 ## Über mich
 
-Ich bin studierter Russist und Webentwickler. 2020 habe ich begonnen, eine Webapp zum Russischlernen zu entwickeln. Auslöser war meine Erfahrung, dass Spracherwerb – insbesondere bei weniger verbreiteten Sprachen – Lerner oft überfordert.
+Ich heiße Björn Kawecki und bin studierter Russist und Webentwickler. 2020 begann ich mit der Entwicklung einer Webapp zum Russischlernen. Ausgangspunkt war meine Beobachtung, dass insbesondere weniger verbreitete Sprachen Lerner oft strukturell überfordern – weniger wegen ihrer Komplexität als wegen der Art, wie Inhalte vermittelt werden.
 
-Hier braucht es meiner Meinung nach Entlastung in Form strukturierter und effizienter Wissensaufbereitung und -darstellung. Allgemein glaube ich, dass digitale Medien im Bereich der Didaktik noch stark unterentwickelt sind und ihr Potential noch ergründet werden muss.
+## Digital lernen
+
+Ich bin überzeugt, dass das didaktische Potenzial digitaler Medien noch nicht ausgeschöpft ist. Lerner – ob in Schule, Studium oder Selbststudium – benötigen klar strukturierte Inhalte, die Komplexität reduzieren und Orientierung geben. Mit diesem Projekt möchte ich dazu einen Beitrag leisten.
 
 ## Kontakt
 
