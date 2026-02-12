@@ -29,4 +29,4 @@ Ich bin überzeugt, dass das didaktische Potenzial digitaler Medien noch nicht a
   <li><strong>E-Mail:</strong> <a class="link-external" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer">{{ site.email }}</a></li>
 </ul>
 
-Mit einem Abonnement des [RSS-Feeds](/feed.xml) verpasst du keine neuen Beiträge.
+Mit einem Abonnement des [RSS-Feeds](/feed.xml) bleibst du auf dem Laufenden.
