@@ -20,7 +20,6 @@ There were also listening exercises with multiple-choice answers and tasks where
 - Clear, fixed learning paths
 - Low-threshold entry
 - Short, self-contained practice units
-- Wide range of languages in the subscription
 
 ## Where are the weaknesses?
 

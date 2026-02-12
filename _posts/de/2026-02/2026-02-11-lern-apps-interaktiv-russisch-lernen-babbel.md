@@ -20,7 +20,6 @@ Hinzu kamen Hörübungen mit Auswahl vorgegebener Antworten sowie Aufgaben, bei 
 - klare, feste Lernpfade
 - niedrigschwelliger Einstieg
 - kurze, abgeschlossene Übungseinheiten
-- breites Sprachangebot im Abo
 
 ## Wo liegen die Schwächen?
 
