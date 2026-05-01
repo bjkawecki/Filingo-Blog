@@ -463,13 +463,7 @@ a:hover {
   color: var(--post-meta-color, var(--mantine-color-dimmed));
 }
 
-/* Meta/Description-Kontrast: Light-Mode dunkler, Dark-Mode heller */
-[data-mantine-color-scheme="light"] {
-  --post-meta-color: var(--mantine-color-gray-7);
-}
-[data-mantine-color-scheme="dark"] {
-  --post-meta-color: var(--mantine-color-dark-1);
-}
+/* Meta/Description: --post-meta-color in contrast.css */
 
 /* ========== Kategorie-Seite ========== */
 .category-page {
@@ -548,10 +542,6 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   padding: var(--mantine-spacing-md) 0;
-}
-
-[data-mantine-color-scheme="dark"] .article {
-  --article-text-color: var(--mantine-color-dark-0);
 }
 
 .article__title {

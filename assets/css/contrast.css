@@ -1,0 +1,18 @@
+/* Kontrast-Anhebung über Mantine-Basis; nach main.css laden */
+
+/* Light: Attribut fehlt oft (theme.js entfernt es) → :root ohne dark */
+:root:not([data-mantine-color-scheme="dark"]),
+[data-mantine-color-scheme="light"] {
+  --mantine-color-dimmed: var(--mantine-color-gray-8);
+  --post-meta-color: var(--mantine-color-gray-8);
+}
+
+[data-mantine-color-scheme="dark"] {
+  --mantine-color-text: #ebebeb;
+  --mantine-color-dimmed: var(--mantine-color-dark-1);
+  --post-meta-color: var(--mantine-color-dark-0);
+}
+
+[data-mantine-color-scheme="dark"] .article {
+  --article-text-color: var(--mantine-color-text);
+}
