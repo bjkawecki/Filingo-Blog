@@ -4,7 +4,7 @@ title: "Quality Benchmarks for Learning Software"
 category: Teaching
 lang: en
 locale: en
-page_id: quality-benchmarks-for-learning-software
+page_id: messwerte-guter-lernsoftware
 ---
 
 How do you actually judge good learning software, and what must it deliver? I would like to mention a few, maybe less obvious, quality markers and explain them briefly.
