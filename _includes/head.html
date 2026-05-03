@@ -41,3 +41,6 @@
 })();
 </script>
 <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
+{% if jekyll.environment == "production" %}
+<script src="https://alceris.com/script.js" data-id="e416cd67ddd4baaf" async defer></script>
+{% endif %}
