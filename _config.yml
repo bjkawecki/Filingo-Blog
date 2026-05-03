@@ -58,3 +58,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - _site
+
+
+feed:
+  posts_limit: 50
