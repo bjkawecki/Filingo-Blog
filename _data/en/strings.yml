@@ -19,6 +19,9 @@ category:
   all_posts: "All blog posts"
   path_segment: "category"
 
+navbar:
+  app_link: "Filingo app"
+
 theme:
   light_mode: "Light mode"
   dark_mode: "Dark mode"

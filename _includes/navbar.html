@@ -7,8 +7,10 @@
     <div class="navbar__actions">
 
       {% capture about_href %}{{ site.baseurl }}{{ site.data[site.active_lang].strings.footer.about_path }}{% endcapture %}
+      <a class="navbar__link" href="https://filingo.app/" target="_blank" rel="noopener noreferrer">
+        {{ site.data[site.active_lang].strings.navbar.app_link }}{% include icons/external-link.html %}
+      </a>
       <a class="navbar__link" href="{{ about_href }}">{{ site.data[site.active_lang].strings.footer.about }}</a>
-
       <div class="navbar__dropdown">
         <button type="button" class="navbar__dropdown-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="navbar-categories-menu" id="navbar-categories-btn">{{ site.data[site.active_lang].strings.category.nav_label }}</button>
         <div class="navbar__dropdown-menu" id="navbar-categories-menu" role="menu" aria-labelledby="navbar-categories-btn">
