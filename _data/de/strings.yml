@@ -20,7 +20,7 @@ category:
   path_segment: "kategorie"
 
 navbar:
-  app_link: "Filingo-App"
+  app_link: "Zur Filingo-App"
   rss_link: "RSS"
   menu_toggle: "Navigation öffnen"
   nav_aria: "Hauptnavigation"
