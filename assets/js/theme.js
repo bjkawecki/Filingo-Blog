@@ -55,10 +55,40 @@
     apply(current === "dark" ? "light" : "dark");
   }
 
+  function initNavbarMenu() {
+    var btn = document.querySelector(".navbar__menu-toggle");
+    var menu = document.getElementById("navbar-menu");
+    if (!btn || !menu) return;
+
+    function setOpen(isOpen) {
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      menu.classList.toggle("is-open", isOpen);
+    }
+
+    btn.addEventListener("click", function () {
+      setOpen(btn.getAttribute("aria-expanded") !== "true");
+    });
+
+    menu.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+
+    document.addEventListener("click", function (event) {
+      if (!menu.classList.contains("is-open")) return;
+      if (event.target.closest(".navbar")) return;
+      setOpen(false);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") setOpen(false);
+    });
+  }
+
   function init() {
     apply(getPreferred());
     var btn = document.getElementById("theme-toggle");
     if (btn) btn.addEventListener("click", toggle);
+    initNavbarMenu();
   }
 
   if (document.readyState === "loading") {

@@ -21,6 +21,8 @@ category:
 
 navbar:
   app_link: "Filingo-App"
+  menu_toggle: "Navigation öffnen"
+  nav_aria: "Hauptnavigation"
 
 theme:
   light_mode: "Heller Modus"

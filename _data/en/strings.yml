@@ -21,6 +21,8 @@ category:
 
 navbar:
   app_link: "Filingo app"
+  menu_toggle: "Open navigation"
+  nav_aria: "Main navigation"
 
 theme:
   light_mode: "Light mode"
