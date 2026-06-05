@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Language Learning Apps: Learning Russian Interactively"
+description: "Learning Russian is a real challenge. Thanks to the wide range of digital tools available today, foreign languages seem more accessible than ever. But..."
 category: Russian
 lang: en
 locale: en

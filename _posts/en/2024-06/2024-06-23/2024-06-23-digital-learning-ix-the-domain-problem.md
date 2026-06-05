@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital Learning IX: The Domain Problem"
+description: "If you were choosing a restaurant to eat sushi: Which would you prefer? One that serves only sushi, or one that also offers pizza, burgers, and pasta?"
 category: Didactics
 lang: en
 locale: en
 page_id: digital-lernen-IX
+series: digital-learning
+series_order: 9
 ---
 
 If you were choosing a restaurant to eat sushi:  

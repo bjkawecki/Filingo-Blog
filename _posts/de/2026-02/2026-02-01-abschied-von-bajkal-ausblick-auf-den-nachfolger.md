@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Abschied von Bajkal, Ausblick auf den Nachfolger"
+description: "Ich habe die Arbeit an meiner Russisch-Sprachlernapp „Bajkal“ eingestellt. Entsprechend ist die Anwendung unter der Domain bajkal-app.de seit einigen..."
 category: Russisch
 lang: de
 locale: de

@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital lernen VI: Spezialisierung"
+description: "Für Französisch oder Italienisch gibt es eine ausreichend große Nachfrage. Es lohnt sich also für Verlage, für diese Fremdsprachen lineares Lernmaterial..."
 category: Didaktik
 lang: de
 locale: de
 page_id: digital-lernen-VI
+series: digital-learning
+series_order: 6
 ---
 
 Für Französisch oder Italienisch gibt es eine ausreichend große Nachfrage.

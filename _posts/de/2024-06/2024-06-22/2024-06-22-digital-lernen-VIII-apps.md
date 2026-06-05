@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital lernen VIII: Apps"
+description: "Eine dritte Möglichkeit für das Lernen einer Fremdsprache mithilfe eines Programms sind spezialisierte Apps bzw. Webapps. Diese zeichnen sich durch den..."
 category: Didaktik
 lang: de
 locale: de
 page_id: digital-lernen-VIII
+series: digital-learning
+series_order: 8
 ---
 
 Eine dritte Möglichkeit für das Lernen einer Fremdsprache mithilfe eines Programms sind spezialisierte Apps bzw. Webapps.

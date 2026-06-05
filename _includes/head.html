@@ -1,10 +1,46 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-{% assign page_desc = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
+{% assign active_lang = site.active_lang | default: page.lang | default: site.default_lang %}
+{% assign active_strings = site.data[active_lang].strings %}
+{% assign site_desc = active_strings.seo.description | default: site.description %}
+{% assign page_desc = page.description | default: page.excerpt | default: site_desc | strip_html | normalize_whitespace | truncate: 160 %}
 <meta name="description" content="{{ page_desc | strip_newlines | strip | escape }}">
-{% assign canonical_url = site.url | append: site.baseurl | append: page.url %}
+{% assign raw_url = page.url | default: '/' %}
+{% assign localized_url = raw_url %}
+{% if active_lang != site.default_lang %}
+  {% assign active_prefix = '/' | append: active_lang | append: '/' %}
+  {% assign raw_prefix = raw_url | slice: 0, active_prefix.size %}
+  {% if raw_url == '/' or raw_url == '/index.html' %}
+    {% capture localized_url %}/{{ active_lang }}/{% endcapture %}
+  {% elsif raw_prefix != active_prefix %}
+    {% capture localized_url %}/{{ active_lang }}{{ raw_url }}{% endcapture %}
+  {% endif %}
+{% elsif raw_url == '/index.html' %}
+  {% assign localized_url = '/' %}
+{% endif %}
+{% assign canonical_url = site.url | append: site.baseurl | append: localized_url %}
 <link rel="canonical" href="{{ canonical_url }}">
+{% if page.permalink_lang %}
+  {% for lang in site.languages %}
+    {% assign alt_path = page.permalink_lang[lang] | default: '/' %}
+    {% capture alt_href %}{{ site.url }}{{ site.baseurl }}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% if alt_path != '/' %}{{ alt_path | remove_first: '/' }}{% endif %}{% endcapture %}
+    <link rel="alternate" hreflang="{{ lang }}" {% static_href %}href="{{ alt_href }}"{% endstatic_href %}>
+    {% if lang == site.default_lang %}
+<link rel="alternate" hreflang="x-default" {% static_href %}href="{{ alt_href }}"{% endstatic_href %}>
+    {% endif %}
+  {% endfor %}
+{% elsif raw_url == '/' or raw_url == '/index.html' %}
+  {% for lang in site.languages %}
+    {% capture alt_href %}{{ site.url }}{{ site.baseurl }}/{% if lang != site.default_lang %}{{ lang }}/{% endif %}{% endcapture %}
+    <link rel="alternate" hreflang="{{ lang }}" {% static_href %}href="{{ alt_href }}"{% endstatic_href %}>
+    {% if lang == site.default_lang %}
+<link rel="alternate" hreflang="x-default" {% static_href %}href="{{ alt_href }}"{% endstatic_href %}>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% capture feed_url %}{{ site.url }}{{ site.baseurl }}/{% if active_lang != site.default_lang %}{{ active_lang }}/{% endif %}feed.xml{% endcapture %}
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }} {{ active_lang | upcase }}" {% static_href %}href="{{ feed_url }}"{% endstatic_href %}>
 <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" sizes="any">
 <link rel="icon" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}" type="image/png">
 <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
@@ -13,10 +49,17 @@
 <meta property="og:url" content="{{ canonical_url }}">
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:locale" content="{{ active_strings.seo.locale | default: active_lang }}">
+{% for lang in site.languages %}
+  {% if lang != active_lang %}
+<meta property="og:locale:alternate" content="{{ site.data[lang].strings.seo.locale | default: lang }}">
+  {% endif %}
+{% endfor %}
+{% assign default_image = site.image | default: '/assets/img/apple-touch-icon.png' %}
 {% if page.image %}
   {% assign og_image = site.url | append: site.baseurl | append: page.image %}
 {% else %}
-  {% assign og_image = site.url | append: site.baseurl | append: '/assets/img/apple-touch-icon.png' %}
+  {% assign og_image = site.url | append: site.baseurl | append: default_image %}
 {% endif %}
 <meta property="og:image" content="{{ og_image }}">
 {% if page.layout == 'post' and page.date %}

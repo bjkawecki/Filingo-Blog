@@ -1,0 +1,19 @@
+{% if page.series %}
+  {% assign series_posts = site.posts | where: "lang", site.active_lang | where: "series", page.series | sort: "series_order" %}
+  {% if series_posts.size > 1 %}
+<nav class="series-posts" aria-labelledby="series-posts-title">
+  <h2 class="series-posts__heading" id="series-posts-title">{{ site.data[site.active_lang].strings.post.series_title }}</h2>
+  <ol class="series-posts__list">
+    {% for post in series_posts %}
+    <li class="series-posts__item{% if post.url == page.url %} series-posts__item--current{% endif %}">
+      {% if post.url == page.url %}
+      <span class="series-posts__current">{{ post.title }}</span>
+      {% else %}
+      <a class="series-posts__link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</nav>
+  {% endif %}
+{% endif %}

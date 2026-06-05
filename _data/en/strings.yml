@@ -11,7 +11,7 @@ pagination:
 
 home:
   welcome: "Welcome"
-  welcome_text: "This blog is all about Filingo, learning Russian, and digital pedagogy."
+  welcome_text: "Notes on learning Russian, learning software, and the development of Filingo."
 
 category:
   title_prefix: "Category:"
@@ -21,8 +21,19 @@ category:
 
 navbar:
   app_link: "Filingo app"
+  rss_link: "RSS"
   menu_toggle: "Open navigation"
   nav_aria: "Main navigation"
+
+post:
+  reading_time_one: "1 min read"
+  reading_time_other: "%d min read"
+  language_version: "Deutsche Version"
+  series_title: "More posts in this series"
+
+seo:
+  description: "Filingo Blog: learning Russian, digital pedagogy, and notes from the development of the Filingo language-learning trainer."
+  locale: "en_US"
 
 theme:
   light_mode: "Light mode"

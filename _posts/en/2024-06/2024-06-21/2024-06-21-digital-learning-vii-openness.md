@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital Learning VII: Openness"
+description: "A free alternative to the Langenscheidt vocabulary trainer that is available on multiple operating systems is the flashcard program Anki."
 category: Didactics
 lang: en
 locale: en
 page_id: digital-lernen-VII
+series: digital-learning
+series_order: 7
 ---
 
 A free alternative to the Langenscheidt vocabulary trainer that is available on multiple operating systems is the flashcard program **Anki**.

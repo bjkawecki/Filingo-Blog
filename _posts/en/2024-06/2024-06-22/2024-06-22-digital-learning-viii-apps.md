@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital Learning VIII: Apps"
+description: "A third way to learn a foreign language using a program is through specialized apps or web apps. These are characterized by their use of modern web..."
 category: Didactics
 lang: en
 locale: en
 page_id: digital-lernen-VIII
+series: digital-learning
+series_order: 8
 ---
 
 A third way to learn a foreign language using a program is through **specialized apps or web apps**.  

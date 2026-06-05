@@ -4,6 +4,7 @@ description: "Filingo-Blog: Russisch lernen, digitale Didaktik und Einblicke in 
 author: Björn Kawecki
 email: post@bjoernkawecki.de
 url: "https://blog.filingo.app"
+image: "/assets/img/apple-touch-icon.png"
 
 # Plugins
 plugins:

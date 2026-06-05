@@ -6,7 +6,16 @@ layout: default
   <a href="{{ blog_index_href }}" class="category-page__back">{{ site.data[site.active_lang].strings.category.all_posts }}</a>
   <h1 class="article__title">{{ page.title }}</h1>
   <div class="article__meta">
+    {% assign word_count = content | strip_html | number_of_words %}
+    {% assign reading_minutes = word_count | divided_by: 200 %}
+    {% assign reading_remainder = word_count | modulo: 200 %}
+    {% if reading_minutes < 1 %}
+      {% assign reading_minutes = 1 %}
+    {% elsif reading_remainder > 0 %}
+      {% assign reading_minutes = reading_minutes | plus: 1 %}
+    {% endif %}
     {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{% if site.active_lang == "en" %}{{ page.date | date: "%b %d, %Y" }}{% else %}{{ page.date | date: "%d.%m.%Y" }}{% endif %}</time>{% endif %}
+    · {% if reading_minutes == 1 %}{{ site.data[site.active_lang].strings.post.reading_time_one }}{% else %}{{ site.data[site.active_lang].strings.post.reading_time_other | replace: "%d", reading_minutes }}{% endif %}
     {% if page.category %}
     {% assign cat_slug = nil %}
     {% assign cat_name = page.category %}
@@ -26,9 +35,23 @@ layout: default
     · {{ page.category }}
     {% endif %}
     {% endif %}
+    {% assign alternate_lang = nil %}
+    {% if page.permalink_lang %}
+      {% for lang in site.languages %}
+        {% if lang != site.active_lang and page.permalink_lang[lang] %}
+          {% assign alternate_lang = lang %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if alternate_lang %}
+    {% capture language_href %}{{ site.baseurl }}/{% if alternate_lang != site.default_lang %}{{ alternate_lang }}/{% endif %}{% if page.permalink_lang[alternate_lang] != '/' %}{{ page.permalink_lang[alternate_lang] | remove_first: '/' }}{% endif %}{% endcapture %}
+    · <a class="article__meta-link" {% static_href %}href="{{ language_href }}" {% endstatic_href %}>{{ site.data[site.active_lang].strings.post.language_version }}</a>
+    {% endif %}
   </div>
   <div class="article__content">
     {{ content }}
   </div>
+  {% include series_posts.html %}
   {% include post_pagination.html %}
 </article>

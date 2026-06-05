@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Saying Goodbye to Bajkal, Looking Ahead to Its Successor"
+description: "I have discontinued work on my Russian language learning web app “Bajkal”. As a result, the application has not been accessible under the domain..."
 category: Russian
 lang: en
 locale: en

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lern-Apps: Interaktiv Russisch lernen"
+description: "Russisch lernen ist eine echte Herausforderung. Dank vielfältiger digitaler Angebote scheinen Fremdsprachen heute zwar zugänglicher denn je zu sein. Aber..."
 category: Russisch
 lang: de
 locale: de

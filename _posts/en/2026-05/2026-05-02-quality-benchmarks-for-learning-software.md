@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Quality Benchmarks for Learning Software"
-category: Teaching
+description: "How do you actually judge good learning software, and what must it deliver? I would like to mention a few, maybe less obvious, quality markers and explain..."
+category: Didactics
 lang: en
 locale: en
 page_id: messwerte-guter-lernsoftware

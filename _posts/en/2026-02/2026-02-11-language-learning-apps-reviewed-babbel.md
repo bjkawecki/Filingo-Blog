@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Language Learning Apps Reviewed: Babbel"
+description: "Babbel is often contrasted with Duolingo—as the more structured platform with a stronger focus on grammar and practical use. I wanted to see how that..."
 category: Russian
 lang: en
 locale: en

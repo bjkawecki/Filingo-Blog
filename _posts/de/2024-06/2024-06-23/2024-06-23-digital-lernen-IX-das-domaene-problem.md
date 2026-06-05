@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital lernen IX: Das Domäne-Problem"
+description: "Wenn Sie ein Restaurant auswählen würden, um Sushi zu essen: Welches würden Sie bevorzugen? Eines, das ausschließlich Sushi anbietet, oder eines, das..."
 category: Didaktik
 lang: de
 locale: de
 page_id: digital-lernen-IX
+series: digital-learning
+series_order: 9
 ---
 
 Wenn Sie ein Restaurant auswählen würden, um Sushi zu essen: Welches würden Sie bevorzugen?

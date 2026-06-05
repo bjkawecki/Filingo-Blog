@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital lernen III: Das Problem mit müdem Papier"
+description: "Arbeitshefte sind zunächst eine wunderbare Ergänzung zu Lehrbüchern. Lehrbücher vermitteln den theoretischen Lernstoff. Arbeitshefte enthalten..."
 category: Didaktik
 lang: de
 locale: de
 page_id: digital-lernen-III
+series: digital-learning
+series_order: 3
 ---
 
 Arbeitshefte sind zunächst eine wunderbare Ergänzung zu Lehrbüchern. Lehrbücher vermitteln den theoretischen Lernstoff. Arbeitshefte enthalten vorgefertigte Übungen, um die Theorie anzuwenden und zu verinnerlichen.

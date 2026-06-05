@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital Learning II: Linear Learning Materials"
+description: "Another disadvantage that books have compared to digital learning materials is their limited nature. As already mentioned, information in books can only..."
 lang: en
 category: Didactics
 locale: en
 page_id: digital-lernen-II
+series: digital-learning
+series_order: 2
 ---
 
 Another disadvantage that books have compared to digital learning materials is their limited nature. As already mentioned, information in books can only be arranged and printed ("stored") linearly, and a textbook can only have a limited number of pages.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lern-Apps im Test: Anki"
+description: "Die App basiert auf dem Prinzip der \"verteilten Wiederholung\" (spaced repetition), also der systematischen Wiederholung mit zunehmenden Zeitabständen, was..."
 category: Russisch
 lang: de
 locale: de

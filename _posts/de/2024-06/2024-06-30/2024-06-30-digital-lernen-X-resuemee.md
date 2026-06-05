@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital lernen X: Resümee"
+description: "Nach dieser Einleitung in meine Gedanken zum Thema \"Digital Lernen\" möchte ich nun noch einmal die wichtigsten Punkte festhalten."
 category: Didaktik
 lang: de
 locale: de
 page_id: digital-lernen-X
+series: digital-learning
+series_order: 10
 ---
 
 Nach dieser Einleitung in meine Gedanken zum Thema "Digital Lernen" möchte ich nun noch einmal die wichtigsten Punkte festhalten.

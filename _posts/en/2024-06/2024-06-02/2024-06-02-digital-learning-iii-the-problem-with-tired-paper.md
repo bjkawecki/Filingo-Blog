@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital Learning III: The Problem with Tired Paper"
+description: "Workbooks are initially a wonderful complement to textbooks. Textbooks convey the theoretical material. Workbooks contain ready-made exercises to apply..."
 category: Didactics
 lang: en
 locale: en
 page_id: digital-lernen-III
+series: digital-learning
+series_order: 3
 ---
 
 Workbooks are initially a wonderful complement to textbooks. Textbooks convey the theoretical material. Workbooks contain ready-made exercises to apply and internalize that theory.

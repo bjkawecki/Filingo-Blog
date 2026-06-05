@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Digital Learning IV: Learning by Heart"
+description: "The first positive experience I had with an online learning program was while preparing for the theoretical part of my driving test."
 category: Didactics
 lang: en
 locale: en
 page_id: digital-lernen-IV
+series: digital-learning
+series_order: 4
 ---
 
 The first positive experience I had with an online learning program was while preparing for the theoretical part of my driving test.

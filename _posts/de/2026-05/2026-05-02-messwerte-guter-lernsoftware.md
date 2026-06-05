@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Messwerte guter Lernsoftware"
+description: "Woran bemisst sich eigentlich gute Lernsoftware und was muss sie leisten? Ich möchte ein paar – vielleicht etwas weniger offensichtliche –..."
 category: Didaktik
 lang: de
 locale: de
