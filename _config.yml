@@ -2,7 +2,7 @@
 title: Фilingo Blog
 description: "Filingo-Blog: Russisch lernen, digitale Didaktik und Einblicke in die Entwicklung des Sprachlern-Trainers Filingo."
 author: Björn Kawecki
-email: bkawecki@mailbox.org
+email: post@bjoernkawecki.de
 url: "https://blog.filingo.app"
 
 # Plugins
@@ -33,7 +33,7 @@ jekyll-archives:
 # Mehrsprachigkeit (de/en)
 languages: ["de", "en"]
 default_lang: "de"
-exclude_from_localizations: ["assets", "images", "robots.txt", "sitemap.xml"]
+exclude_from_localization: ["assets", "images", "robots.txt", "sitemap.xml"]
 
 # Layout: alle Seiten default, Posts mit post + Permalink
 defaults:

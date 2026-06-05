@@ -2,7 +2,8 @@
 layout: default
 title: About
 lang: en
-permalink: /en/about/
+page_id: about
+permalink: /about/
 narrow_content: true
 ---
 

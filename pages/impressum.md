@@ -2,6 +2,7 @@
 layout: default
 title: Impressum
 lang: de
+page_id: imprint
 permalink: /impressum/
 narrow_content: true
 ---

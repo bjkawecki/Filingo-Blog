@@ -2,6 +2,7 @@
 layout: default
 title: Über
 lang: de
+page_id: about
 permalink: /ueber/
 narrow_content: true
 ---

@@ -2,7 +2,8 @@
 layout: default
 title: Imprint
 lang: en
-permalink: /en/imprint/
+page_id: imprint
+permalink: /imprint/
 narrow_content: true
 ---
 
