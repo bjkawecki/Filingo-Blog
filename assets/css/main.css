@@ -796,6 +796,13 @@ a:hover {
   color: var(--post-meta-color, var(--mantine-color-dimmed));
 }
 
+.post-pagination__body {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
 .post-pagination__title {
   font-size: var(--mantine-font-size-sm);
   font-weight: 500;
@@ -816,6 +823,10 @@ a:hover {
 .post-pagination__link--prev {
   margin-left: auto;
   text-align: right;
+}
+
+.post-pagination__link--prev .post-pagination__body {
+  justify-content: flex-end;
 }
 
 .post-pagination__placeholder {
@@ -1053,10 +1064,7 @@ a:hover {
   }
 
   .post-pagination__link {
-    display: inline-flex;
     flex: 0 1 48%;
-    align-items: center;
-    gap: 0.35rem;
     max-width: none;
     min-height: 3.25rem;
     padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);

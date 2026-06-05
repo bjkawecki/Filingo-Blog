@@ -12,9 +12,11 @@
     {% if next_index >= 0 %}
       {% assign next_post = all_posts[next_index] %}
       <a class="post-pagination__link post-pagination__link--next" href="{{ next_post.url | relative_url }}" title="{{ next_post.title }}" aria-label="{{ site.data[site.active_lang].strings.pagination.next_post }}: {{ next_post.title }}">
-        <span class="post-pagination__icon" aria-hidden="true">{% include icons/arrow-left.html %}</span>
         <span class="post-pagination__label">{{ site.data[site.active_lang].strings.pagination.next_post }}</span>
-        <span class="post-pagination__title">{{ next_post.title }}</span>
+        <span class="post-pagination__body">
+          <span class="post-pagination__icon" aria-hidden="true">{% include icons/arrow-left.html %}</span>
+          <span class="post-pagination__title">{{ next_post.title }}</span>
+        </span>
       </a>
     {% else %}
       <span class="post-pagination__placeholder"></span>
@@ -25,8 +27,10 @@
       {% assign prev_post = all_posts[prev_index] %}
       <a class="post-pagination__link post-pagination__link--prev" href="{{ prev_post.url | relative_url }}" title="{{ prev_post.title }}" aria-label="{{ site.data[site.active_lang].strings.pagination.previous_post }}: {{ prev_post.title }}">
         <span class="post-pagination__label">{{ site.data[site.active_lang].strings.pagination.previous_post }}</span>
-        <span class="post-pagination__title">{{ prev_post.title }}</span>
-        <span class="post-pagination__icon" aria-hidden="true">{% include icons/arrow-right.html %}</span>
+        <span class="post-pagination__body">
+          <span class="post-pagination__title">{{ prev_post.title }}</span>
+          <span class="post-pagination__icon" aria-hidden="true">{% include icons/arrow-right.html %}</span>
+        </span>
       </a>
     {% else %}
       <span class="post-pagination__placeholder"></span>
