@@ -10,6 +10,15 @@ pagination:
 <header class="home-intro post-list-wrapper">
   <h2 class="home-intro__heading">{{ site.data[site.active_lang].strings.home.welcome }}</h2>
   <p class="home-intro__text">{{ site.data[site.active_lang].strings.home.welcome_text }}</p>
+  <nav class="home-intro__categories" aria-label="{{ site.data[site.active_lang].strings.category.nav_label }}">
+    {% for cat in site.data.categories %}
+    {% assign cat_slug = cat[1][site.active_lang].slug %}
+    {% assign cat_name = cat[1][site.active_lang].name %}
+    {% assign cat_base = site.data[site.active_lang].strings.category.path_segment %}
+    {% capture category_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{{ cat_base }}/{{ cat_slug }}/{% endcapture %}
+    <a class="home-intro__category-pill" href="{{ category_href }}">{{ cat_name }}</a>
+    {% endfor %}
+  </nav>
 </header>
 
 <div class="post-list-wrapper">
