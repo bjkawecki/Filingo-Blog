@@ -1,0 +1,70 @@
+---
+layout: null
+permalink: /feed.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"{% if site.active_lang %} xml:lang="{{ site.active_lang }}"{% endif %}>
+  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+  {% capture feed_self %}{{ site.url }}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}feed.xml{% endcapture %}
+  {% capture feed_home %}{{ site.url }}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{% endcapture %}
+  <link href="{{ feed_self }}" rel="self" type="application/atom+xml" />
+  <link href="{{ feed_home }}" rel="alternate" type="text/html"{% if site.active_lang %} hreflang="{{ site.active_lang }}"{% endif %} />
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ feed_self | xml_escape }}</id>
+  <title type="html">{{ site.title | smartify | xml_escape }}</title>
+  {% assign feed_desc = site.data[site.active_lang].strings.seo.description | default: site.description %}
+  {% if feed_desc %}
+    <subtitle>{{ feed_desc | xml_escape }}</subtitle>
+  {% endif %}
+  {% if site.author %}
+    <author>
+      <name>{{ site.author | xml_escape }}</name>
+      {% if site.email %}
+        <email>{{ site.email | xml_escape }}</email>
+      {% endif %}
+    </author>
+  {% endif %}
+  {% assign posts = site.posts | where: "lang", site.active_lang | where_exp: "post", "post.draft != true" | sort: "date" | reverse %}
+  {% assign posts_limit = site.feed.posts_limit | default: 10 %}
+  {% for post in posts limit: posts_limit %}
+    <entry{% if post.lang %} xml:lang="{{ post.lang }}"{% endif %}>
+      {% assign post_title = post.title | smartify | strip_html | normalize_whitespace | xml_escape %}
+      {% if site.active_lang == "en" %}
+        {% assign post_date = post.date | date: "%b %d, %Y" %}
+      {% else %}
+        {% assign post_date = post.date | date: "%d.%m.%Y" %}
+      {% endif %}
+      {% assign post_category = post.category | default: post.categories[0] %}
+      <title type="html">{{ post_title }}</title>
+      <link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post_title }}" />
+      <published>{{ post.date | date_to_xmlschema }}</published>
+      <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
+      <id>{{ post.id | absolute_url | xml_escape }}</id>
+      <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}"><![CDATA[
+<h1 style="font-size:2rem;line-height:1.2;margin:0 0 0.75rem 0;">{{ post.title | strip_html | xml_escape }}</h1>
+<p style="margin:0 0 1.25rem 0;color:#5f6368;font-size:0.95rem;">{{ post_date }}{% if post_category %} · {{ post_category | strip_html | xml_escape }}{% endif %}</p>
+{{ post.content | strip_svg | strip }}
+<p style="margin-top:1.5rem;"><a href="{{ post.url | absolute_url }}">{{ feed_strings.read_more | xml_escape }}</a></p>
+]]></content>
+      {% assign post_author = post.author | default: site.author %}
+      <author>
+        <name>{{ post_author | default: "" | xml_escape }}</name>
+      </author>
+      {% if post.category %}
+        <category term="{{ post.category | xml_escape }}" />
+      {% elsif post.categories %}
+        {% for category in post.categories %}
+          <category term="{{ category | xml_escape }}" />
+        {% endfor %}
+      {% endif %}
+      {% for tag in post.tags %}
+        <category term="{{ tag | xml_escape }}" />
+      {% endfor %}
+      {% assign post_summary = post.description | default: post.excerpt %}
+      {% if post_summary and post_summary != empty %}
+        <summary type="html"><![CDATA[{{ post_summary | strip_html | normalize_whitespace }}]]></summary>
+      {% endif %}
+    </entry>
+  {% endfor %}
+</feed>
