@@ -1,7 +1,13 @@
 # Site
 title: Фilingo Blog
 description: "Filingo-Blog: Russisch lernen, digitale Didaktik und Einblicke in die Entwicklung des Sprachlern-Trainers Filingo."
-author: Björn Kawecki
+author:
+  name: Björn Kawecki
+  url: https://bjoernkawecki.de
+  sameAs:
+    - https://bjoernkawecki.de
+    - https://github.com/bjkawecki
+    - https://www.linkedin.com/in/bj%C3%B6rnkawecki/
 email: post@bjoernkawecki.de
 url: "https://blog.filingo.app"
 image: "/assets/img/apple-touch-icon.png"

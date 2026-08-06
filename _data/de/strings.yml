@@ -35,6 +35,9 @@ seo:
   description: "Filingo-Blog: Russisch lernen, digitale Didaktik und Einblicke in die Entwicklung des Sprachlern-Trainers Filingo."
   locale: "de_DE"
 
+feed:
+  read_more: "Weiterlesen im Blog"
+
 theme:
   light_mode: "Heller Modus"
   dark_mode: "Dunkler Modus"

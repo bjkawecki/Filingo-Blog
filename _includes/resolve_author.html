@@ -1,0 +1,17 @@
+{% comment %}
+  Resolves author name and profile URL from page frontmatter or site config.
+  Outputs: resolved_author_name, resolved_author_url, resolved_author_about_href
+{% endcomment %}
+{% if page.author %}
+  {% if page.author.name %}
+    {% assign resolved_author_name = page.author.name %}
+    {% assign resolved_author_url = page.author.url %}
+  {% else %}
+    {% assign resolved_author_name = page.author %}
+    {% assign resolved_author_url = nil %}
+  {% endif %}
+{% else %}
+  {% assign resolved_author_name = site.author.name %}
+  {% assign resolved_author_url = site.author.url %}
+{% endif %}
+{% capture resolved_author_about_href %}{{ site.baseurl }}{{ site.data[site.active_lang].strings.footer.about_path }}{% endcapture %}

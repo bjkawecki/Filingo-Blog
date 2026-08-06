@@ -6,6 +6,11 @@ layout: default
   <a href="{{ blog_index_href }}" class="category-page__back">{{ site.data[site.active_lang].strings.category.all_posts }}</a>
   <h1 class="article__title">{{ page.title }}</h1>
   <div class="article__meta">
+    {% include resolve_author.html %}
+    <span class="article__meta-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+      <a class="article__meta-link" href="{{ resolved_author_about_href }}" rel="author" itemprop="url"><span itemprop="name">{{ resolved_author_name }}</span></a>
+    </span>
+    ·
     {% assign word_count = content | strip_html | number_of_words %}
     {% assign reading_minutes = word_count | divided_by: 200 %}
     {% assign reading_remainder = word_count | modulo: 200 %}

@@ -17,14 +17,15 @@ sitemap: false
   {% if feed_desc %}
     <subtitle>{{ feed_desc | xml_escape }}</subtitle>
   {% endif %}
-  {% if site.author %}
+  {% if site.author.name %}
     <author>
-      <name>{{ site.author | xml_escape }}</name>
+      <name>{{ site.author.name | xml_escape }}</name>
       {% if site.email %}
         <email>{{ site.email | xml_escape }}</email>
       {% endif %}
     </author>
   {% endif %}
+  {% assign feed_strings = site.data[site.active_lang].strings.feed %}
   {% assign posts = site.posts | where: "lang", site.active_lang | where_exp: "post", "post.draft != true" | sort: "date" | reverse %}
   {% assign posts_limit = site.feed.posts_limit | default: 10 %}
   {% for post in posts limit: posts_limit %}
@@ -43,11 +44,11 @@ sitemap: false
       <id>{{ post.id | absolute_url | xml_escape }}</id>
       <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}"><![CDATA[
 <h1 style="font-size:2rem;line-height:1.2;margin:0 0 0.75rem 0;">{{ post.title | strip_html | xml_escape }}</h1>
-<p style="margin:0 0 1.25rem 0;color:#5f6368;font-size:0.95rem;">{{ post_date }}{% if post_category %} · {{ post_category | strip_html | xml_escape }}{% endif %}</p>
+<p style="margin:0 0 1.25rem 0;color:#5f6368;font-size:0.95rem;">{{ site.author.name | strip_html | xml_escape }} · {{ post_date }}{% if post_category %} · {{ post_category | strip_html | xml_escape }}{% endif %}</p>
 {{ post.content | strip_svg | strip }}
 <p style="margin-top:1.5rem;"><a href="{{ post.url | absolute_url }}">{{ feed_strings.read_more | xml_escape }}</a></p>
 ]]></content>
-      {% assign post_author = post.author | default: site.author %}
+      {% assign post_author = post.author | default: site.author.name %}
       <author>
         <name>{{ post_author | default: "" | xml_escape }}</name>
       </author>

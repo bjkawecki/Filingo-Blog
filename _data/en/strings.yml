@@ -35,6 +35,9 @@ seo:
   description: "Filingo Blog: learning Russian, digital pedagogy, and notes from the development of the Filingo language-learning trainer."
   locale: "en_US"
 
+feed:
+  read_more: "Read on the blog"
+
 theme:
   light_mode: "Light mode"
   dark_mode: "Dark mode"

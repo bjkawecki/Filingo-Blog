@@ -1,0 +1,28 @@
+{% include resolve_author.html %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page_desc | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "inLanguage": {{ active_lang | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ canonical_url | jsonify }}
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ resolved_author_name | jsonify }}{% if resolved_author_url %},
+    "url": {{ resolved_author_url | jsonify }}{% endif %}{% if site.author.sameAs %},
+    "sameAs": {{ site.author.sameAs | jsonify }}{% endif %}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | append: site.baseurl | append: '/' | jsonify }}
+  },
+  "image": {{ og_image | jsonify }}
+}
+</script>
