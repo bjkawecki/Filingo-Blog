@@ -14,3 +14,10 @@ russian:
   en:
     slug: russian
     name: Russian
+filingo:
+  de:
+    slug: filingo
+    name: Filingo
+  en:
+    slug: filingo
+    name: Filingo
