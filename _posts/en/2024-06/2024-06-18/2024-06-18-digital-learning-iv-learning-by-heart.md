@@ -14,7 +14,7 @@ The first positive experience I had with an online learning program was while pr
 
 Today, there are countless apps and websites available as free online tools for driving students. But back in 2013, it was still common to buy printed booklets with the exam questions and fill them out by hand.
 
-However, there was an alternative to the paper booklets: the driving theory trainer from Aral, which a classmate fortunately recommended to me. Thanks to this great site — which [still exists](https://mein.aral.de/einstellungen/theorietrainer), by the way — preparing for the test became much easier.
+However, there was an alternative to the paper booklets: the driving theory trainer from Aral, which a classmate fortunately recommended to me. Thanks to this great site — which <a class="link-external" href="https://mein.aral.de/einstellungen/theorietrainer" target="_blank" rel="noopener noreferrer">still exists{% include icons/external-link.html %}</a>, by the way — preparing for the test became much easier.
 
 All I had to do was go through the question sets repeatedly until I could answer all of them by heart. This was possible because it doesn’t really matter whether a driving student understands the reasoning behind a traffic rule — what matters is simply knowing that it applies.
 
