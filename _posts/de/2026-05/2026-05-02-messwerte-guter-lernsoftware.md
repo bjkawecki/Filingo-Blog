@@ -26,7 +26,7 @@ Gute Lernsoftware stellt daher nicht nur Inhalte bereit, sondern ordnet sie in e
 
 Zu viele digitale Lernangebote sind leider darauf ausgelegt, Nutzer möglichst lange zu binden – in der Regel ein Design, das auf Endorphinausschüttung ausgelegt ist, das den Nutzer nicht voranbringt. Lernen braucht aber Konzentration und Luft zum Verdichten; Dauerbeschäftigung auf dem Bildschirm ist dafür die falsche Metrik.
 
-Gute Lernsoftware darf eben kein zweiter Social-Feed nach Feierabend sein. Klarheit statt Klicks, Reduktion statt Überfluss und vor allem ein erreichbarer Abschluss statt eines offenen Endes. Anders gesagt: Es gibt ein gesetztes Ziel, das man erreichen kann, und man kann den Lernvorgang unterbrechen und fortsetzen, wann man es selbst für richtig hält und nicht die Software.
+Gute Lernsoftware darf eben kein zweiter Social-Feed nach Feierabend sein. Klarheit statt Klicks, Reduktion statt Überfluss und vor allem ein erreichbarer Abschluss statt eines offenen Endes. Anders gesagt: Es gibt ein gesetztes Ziel, das man erreichen kann, und man kann den Lernvorgang unterbrechen und fortsetzen, den man selbst wählt – und nicht die Software.
 
 ## 3. Gute Lernsoftware sucht das Optimum zwischen Überforderung und Unterforderung.
 
