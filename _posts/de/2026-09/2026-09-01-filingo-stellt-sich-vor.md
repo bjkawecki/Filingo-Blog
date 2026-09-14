@@ -48,13 +48,11 @@ Für persönliche Funktionen wie den eigenen Lernfortschritt ist ein Benutzerkon
 
 Ich halte das gerade bei einer unabhängigen und noch unbekannten Lernplattform für einen wichtigen Punkt. Wer Filingo zum ersten Mal entdeckt, soll sich selbst ein Bild davon machen können, bevor eine Registrierung erforderlich wird.
 
-## Das Wörterbuch bleibt zentral
+## Wörter lernen und Formen nachschlagen
 
-Eine Sache, die ich aus Bajkal unbedingt mitnehmen wollte, ist das öffentliche Wörterbuch.
+Filingo soll nicht nur eine App sein, die einem Vokabeln zum Lernen präsentiert. Eine Sache, die ich aus Bajkal daher unbedingt mitnehmen wollte, ist das öffentliche Wörterbuch.
 
-Filingo soll nicht nur eine App sein, die einem Vokabeln zum Lernen präsentiert. Die Sprache selbst soll im Mittelpunkt stehen.
-
-Deshalb gibt es zu den Wörtern neben den Bedeutungen auch grammatische Informationen und Formen. Beispielsätze helfen dabei, die Verwendung eines Wortes im Kontext zu verstehen, und Audiodateien ermöglichen es, die Aussprache direkt zu hören.
+Hier gibt es zu den Wörtern neben den Bedeutungen auch grammatische Informationen und Formen. Beispielsätze helfen dabei, die Verwendung eines Wortes im Kontext zu verstehen, und Audiodateien ermöglichen es, die Aussprache direkt zu hören.
 
 Filingo soll kein großes Online-Wörterbuch ersetzen, sondern eine Ergänzung sein, die Wörterbuch und Lernsystem miteinander verbindet.
 
