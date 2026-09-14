@@ -32,7 +32,7 @@ Der Nutzer möchte eine kostengünstige, auf seine Bedürfnisse zugeschnittene A
 
 In diese Abwägung möchte ein Unternehmen, das einen Sprachtrainer für 20 verschiedene Sprachen entwickelt, möglichst viele Kunden erreichen und hat vermutlich bei der Beschaffung und Umsetzung von Expertenwissen gespart.
 
-An eine Anwendung, die sich an Chinesisch-Schüler und Englisch-Schüler gleichermaßen richtet, würde man wohl zu Recht keine allzu hohen Maßstäbe anlegen – ähnlich wie im obigen Beispiel der Restaurants.
+An eine Anwendung, die sich an Chinesisch-Schüler und Englisch-Schüler gleichermaßen richtet, würde man wohl zu Recht keine allzu hohen Maßstäbe anlegen – ähnlich wie im obigen Beispiel mit den Restaurants.
 
 Sprachen unterscheiden sich mitunter sehr.
 Wer daher dem Anspruch des Fremdsprachenstudiums gerecht werden will, muss _Sprachtraining_ als eine gesonderte Domäne annehmen, _Sprachtraining Englisch_ als eine weitere, _Sprachtraining Chinesisch_ als dritte usw.
