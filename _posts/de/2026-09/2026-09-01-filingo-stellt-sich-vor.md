@@ -54,7 +54,7 @@ Filingo soll nicht nur eine App sein, die einem Vokabeln zum Lernen präsentiert
 
 Hier gibt es zu den Wörtern neben den Bedeutungen auch grammatische Informationen und Formen. Beispielsätze helfen dabei, die Verwendung eines Wortes im Kontext zu verstehen, und Audiodateien ermöglichen es, die Aussprache direkt zu hören.
 
-Filingo soll kein großes Online-Wörterbuch ersetzen, sondern eine Ergänzung sein, die Wörterbuch und Lernsystem miteinander verbindet.
+Filingo soll die anderen Online-Wörterbücher für Russisch nicht ersetzen, aber eine Ergänzung sein mit hoffentlich eigenen frischen Ideen.
 
 ## Lernen mit etwas Gamification
 
