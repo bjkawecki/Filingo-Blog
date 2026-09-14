@@ -13,7 +13,7 @@ series_order: 7
 Eine kostenlose und auf mehreren Betriebssystemen verfügbare Alternative zum Langenscheidt-Vokabeltrainer ist das Lernkartei-Programm Anki.
 Damit ist bereits gesagt, dass sich Anki nicht allein zum Sprachenlernen eignet, sondern für prinzipiell alle Lerninhalte, die auf Karteikarten passen.
 
-Im Gegensatz zum Langenscheidt-Vokabeltrainer it Anki dabei "nur" die Plattform und bietet selbst keine Lerninhalte an.
+Im Gegensatz zum Langenscheidt-Vokabeltrainer ist Anki dabei "nur" die Plattform und bietet selbst keine Lerninhalte an.
 Die Nutzer müssen also ihre Karteikarten selbst anlegen oder auf die Sammlungen anderer zurückgreifen.
 
 Wie auch beim Langenscheidt-Vokabeltrainer kann die Qualität der Inhalte Dritter variieren.

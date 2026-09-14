@@ -27,7 +27,7 @@ Hier machte ich zum zweiten Mal sehr gute Erfahrungen mit einem Lernprogramm, de
 
 In einer ganz anderen Liga spielen schließlich die slawischen Sprachen.
 Meine persönlichen Erfahrung beschränkt sich auf Russisch.
-Aufgrund des fremden Klangbilds, teils anderer Buchstaben und kaum mit dem Deutschen geteilte Wortwurzeln, gehe ich aber von einer ähnlich steilen Lernkurve aus.
+Aufgrund des fremden Klangbilds, teils anderer Buchstaben und kaum mit dem Deutschen geteilter Wortwurzeln, gehe ich aber von einer ähnlich steilen Lernkurve aus.
 
 Im Russischen trifft man zwar ab und zu auf den Einfluss der deutschen Kultur in _Gestalt_ entsprechender Lexeme.
 Die slawischen Sprachen hatten aber einfach nie denselben Einfluss auf die deutsche (bzw. europäische) Kultur wie Latein, Französisch und heute Englisch.
