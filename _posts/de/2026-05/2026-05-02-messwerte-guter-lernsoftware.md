@@ -36,7 +36,7 @@ Der Kopf schafft nur begrenzt viel Neues gleichzeitig. Gute Lernsoftware kennt d
 
 Gute Lernsoftware sorgt dafür, dass sich Aufmerksamkeit aufs Verstehen konzentrieren kann. Umso wichtiger ist somit die Unterscheidung zwischen sinnvoller und vermeidbarer Mühe. Lernen kostet Kraft – das ist richtig so. Problematisch ist, wenn zusätzliche Mühe durch schlechtes Design entsteht: unklare Navigation, überladene Darstellung, konkurrierende Informationen.
 
-Schnell verwechselt man außerdem **viel Tun** mit **viel Lernen** – der Bildschirm blinkt, die Aktivitätskurve sieht gut aus, der Fortschritt beim Stoff bleibt aus. Maßstab ist nicht die Klickzahl, sondern ein möglichst direkter, nachvollziehbarer Weg durch den Inhalt.
+Aktivität ist nicht gleich Lernfortschritt. Eine App kann hektisch wirken und trotzdem kaum Stoff vermitteln. Was zählt, ist ein möglichst direkter, nachvollziehbarer Weg durch den Inhalt, nicht die Zahl der Klicks.
 
 ## 4. Gute Lernsoftware ist nicht notwendig multimedial, sondern multisensorisch.
 
