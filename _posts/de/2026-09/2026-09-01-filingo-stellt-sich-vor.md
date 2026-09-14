@@ -58,9 +58,9 @@ Filingo soll die anderen Online-Wörterbücher für Russisch nicht ersetzen, abe
 
 ## Ein klein wenig *Gamification*
 
-Neu hinzugekommen sind außerdem verschiedene Funktionen, die es bei Bajkal in dieser Form noch nicht gab.
+Neu hinzugekommen sind außerdem verschiedene Funktionen, die es bei Bajkal in dieser Form noch nicht gab. Beim Lernen sammeln Nutzer nun Punkte, schalten Erfolge frei und können sich im Ranking mit anderen messen.
 
-Ich sehr übermäßige Gamification für allgemein kritisch. In Filingo sollen Punkte, Erfolge und ein Ranking deshalb vor allem zusätzliche Motivation liefern – nicht den eigentlichen Lernprozess bestimmen. Beim Lernen sammeln Nutzer Punkte, schalten Erfolge frei und können sich im Ranking mit anderen messen.
+Ich sehr übermäßige Gamification allgemein kritisch. In Filingo sollen daher Punkte, Erfolge und ein Ranking vor allem zusätzliche Motivation liefern – nicht den eigentlichen Lernprozess bestimmen. 
 
 Auch die individuellen Einstellungsmöglichkeiten werden umfangreicher. Unter anderem lässt sich ein persönliches tägliches Lernziel festlegen, und auch die Gestaltung der Anwendung kann stärker an die eigenen Vorlieben angepasst werden.
 
