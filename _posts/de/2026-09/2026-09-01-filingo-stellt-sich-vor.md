@@ -56,7 +56,7 @@ Hier gibt es zu den Wörtern neben den Bedeutungen auch grammatische Information
 
 Filingo soll die anderen Online-Wörterbücher für Russisch nicht ersetzen, aber eine Ergänzung sein mit hoffentlich eigenen frischen Ideen.
 
-## Lernen mit etwas Gamification
+## Ein klein wenig *Gamification*
 
 Neu hinzugekommen sind außerdem verschiedene Funktionen, die es bei Bajkal in dieser Form noch nicht gab.
 
