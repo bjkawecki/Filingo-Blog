@@ -21,3 +21,10 @@ filingo:
   en:
     slug: filingo
     name: Filingo
+marketing:
+  de:
+    slug: vermarktung
+    name: Vermarktung
+  en:
+    slug: marketing
+    name: Marketing
