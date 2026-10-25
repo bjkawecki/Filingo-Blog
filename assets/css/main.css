@@ -98,7 +98,7 @@ a:hover {
 
 .navbar__brand-name {
   font-size: var(--mantine-font-size-lg);
-  line-height: 1;
+  line-height: 1.25;
 }
 
 .navbar__actions {
@@ -618,6 +618,7 @@ a:hover {
 .article__title {
   margin-bottom: var(--mantine-spacing-sm);
   color: var(--article-text-color, var(--mantine-color-text));
+  overflow-wrap: anywhere;
 }
 
 .article__meta {
@@ -935,6 +936,7 @@ a:hover {
 
   .navbar__brand-name {
     font-size: var(--mantine-font-size-md);
+    line-height: 1.25;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1012,13 +1014,18 @@ a:hover {
   }
 
   h1 {
-    font-size: clamp(2rem, 9vw, var(--mantine-h1-font-size));
-    line-height: 1.12;
+    font-size: clamp(1.35rem, 4.5vw + 0.6rem, var(--mantine-h1-font-size));
+    line-height: 1.25;
+  }
+
+  .article__title {
+    font-size: clamp(1.35rem, 4.5vw + 0.6rem, var(--mantine-h1-font-size));
+    line-height: 1.25;
   }
 
   h2 {
-    font-size: clamp(1.5rem, 7vw, var(--mantine-h2-font-size));
-    line-height: 1.18;
+    font-size: clamp(1.35rem, 5.5vw + 0.4rem, var(--mantine-h2-font-size));
+    line-height: 1.25;
   }
 
   .page-content {
