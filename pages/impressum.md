@@ -1,18 +1,9 @@
 ---
-layout: default
+layout: redirect
 title: Impressum
 lang: de
 page_id: imprint
 permalink: /impressum/
-narrow_content: true
+redirect_to: https://bjoernkawecki.de/impressum/
+sitemap: false
 ---
-
-# Impressum
-
-Dies ist ein privater Blog. Er wird weder geschäftsmäßig noch entgeltlich betrieben; eine Impressumspflicht nach § 5 TMG / § 18 MStV besteht daher nicht. Zur Transparenz werden dennoch Anbieter und Kontakt angegeben.
-
-**Verantwortlich für den Inhalt:**  
-{{ site.author.name }}  
-E-Mail: [{{ site.email }}](mailto:{{ site.email }})
-
-**Hinweis:** Für Inhalte verlinkter externer Seiten wird keine Haftung übernommen.

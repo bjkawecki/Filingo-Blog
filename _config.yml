@@ -10,6 +10,8 @@ author:
     - https://www.linkedin.com/in/bj%C3%B6rnkawecki/
 email: post@bjoernkawecki.de
 url: "https://blog.filingo.app"
+# Inhalte und kanonische URLs: persönlicher Blog
+personal_site_url: "https://bjoernkawecki.de"
 image: "/assets/img/apple-touch-icon.png"
 
 # Plugins

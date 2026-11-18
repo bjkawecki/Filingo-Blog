@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.active_lang | default: 'de' }}">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <link rel="canonical" href="{{ include.target }}">
+    <meta http-equiv="refresh" content="0; url={{ include.target }}">
+    <meta name="robots" content="noindex">
+    <script>location.replace({{ include.target | jsonify }});</script>
+  </head>
+  <body>
+    <h1>Redirecting…</h1>
+    <p><a href="{{ include.target }}">Continue to {{ include.target }}</a></p>
+  </body>
+</html>

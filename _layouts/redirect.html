@@ -1,0 +1,8 @@
+{% if page.redirect_to and page.redirect_to != '' %}
+  {% assign target = page.redirect_to %}
+{% elsif site.active_lang != site.default_lang %}
+  {% assign target = 'https://bjoernkawecki.de/' | append: site.active_lang | append: '/' %}
+{% else %}
+  {% assign target = 'https://bjoernkawecki.de/' %}
+{% endif %}
+{% include redirect_body.html target=target %}

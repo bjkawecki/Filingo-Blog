@@ -1,62 +1,14 @@
 ---
-layout: default
+# Posts auf blog.filingo.app → persönlicher Blog (gleiche Slugs unter /blog/)
 ---
-<article class="article">
-  {% capture blog_index_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{% endcapture %}
-  <a href="{{ blog_index_href }}" class="category-page__back">{{ site.data[site.active_lang].strings.category.all_posts }}</a>
-  <h1 class="article__title">{{ page.title }}</h1>
-  <div class="article__meta">
-    {% include resolve_author.html %}
-    <span class="article__meta-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-      <a class="article__meta-link" href="{{ resolved_author_about_href }}" rel="author" itemprop="url"><span itemprop="name">{{ resolved_author_name }}</span></a>
-    </span>
-    ·
-    {% assign word_count = content | strip_html | number_of_words %}
-    {% assign reading_minutes = word_count | divided_by: 200 %}
-    {% assign reading_remainder = word_count | modulo: 200 %}
-    {% if reading_minutes < 1 %}
-      {% assign reading_minutes = 1 %}
-    {% elsif reading_remainder > 0 %}
-      {% assign reading_minutes = reading_minutes | plus: 1 %}
-    {% endif %}
-    {% if page.date %}<time datetime="{{ page.date | date_to_xmlschema }}">{% if site.active_lang == "en" %}{{ page.date | date: "%b %d, %Y" }}{% else %}{{ page.date | date: "%d.%m.%Y" }}{% endif %}</time>{% endif %}
-    · {% if reading_minutes == 1 %}{{ site.data[site.active_lang].strings.post.reading_time_one }}{% else %}{{ site.data[site.active_lang].strings.post.reading_time_other | replace: "%d", reading_minutes }}{% endif %}
-    {% if page.category %}
-    {% assign cat_slug = nil %}
-    {% assign cat_name = page.category %}
-    {% for c in site.data.categories %}
-    {% assign d = c[1] %}
-    {% if page.category == d.de.name or page.category == d.en.name %}
-    {% assign cat_slug = d[site.active_lang].slug %}
-    {% assign cat_name = d[site.active_lang].name %}
-    {% break %}
-    {% endif %}
-    {% endfor %}
-    {% if cat_slug %}
-    {% assign cat_base = site.data[site.active_lang].strings.category.path_segment %}
-    {% capture category_href %}{{ site.baseurl }}/{% if site.active_lang != site.default_lang %}{{ site.active_lang }}/{% endif %}{{ cat_base }}/{{ cat_slug }}/{% endcapture %}
-    · <a href="{{ category_href }}" class="article__meta-link">{{ cat_name }}</a>
-    {% else %}
-    · {{ page.category }}
-    {% endif %}
-    {% endif %}
-    {% assign alternate_lang = nil %}
-    {% if page.permalink_lang %}
-      {% for lang in site.languages %}
-        {% if lang != site.active_lang and page.permalink_lang[lang] %}
-          {% assign alternate_lang = lang %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    {% if alternate_lang %}
-    {% capture language_href %}{{ site.baseurl }}/{% if alternate_lang != site.default_lang %}{{ alternate_lang }}/{% endif %}{% if page.permalink_lang[alternate_lang] != '/' %}{{ page.permalink_lang[alternate_lang] | remove_first: '/' }}{% endif %}{% endcapture %}
-    · <a class="article__meta-link" {% static_href %}href="{{ language_href }}" {% endstatic_href %}>{{ site.data[site.active_lang].strings.post.language_version }}</a>
-    {% endif %}
-  </div>
-  <div class="article__content">
-    {{ content }}
-  </div>
-  {% include series_posts.html %}
-  {% include post_pagination.html %}
-</article>
+{% assign slug_file = page.url | split: '/' | last %}
+{% if slug_file == '' or slug_file == nil %}
+  {% assign slug_file = page.slug | append: '.html' %}
+{% endif %}
+{% assign post_lang = page.lang | default: site.active_lang | default: site.default_lang %}
+{% if post_lang == site.default_lang %}
+  {% assign target = 'https://bjoernkawecki.de/blog/' | append: slug_file %}
+{% else %}
+  {% assign target = 'https://bjoernkawecki.de/' | append: post_lang | append: '/blog/' | append: slug_file %}
+{% endif %}
+{% include redirect_body.html target=target %}
